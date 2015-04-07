@@ -1,0 +1,17 @@
+/*Variables*/
+
+$primary: "azo-sans-web",sans-serif;
+$head: "phoreuscherokee",sans-serif;
+
+
+/*=====font families=====*/
+
+h1, h2 {
+
+	font-family: $head;
+}
+
+h3, h4, nav a, p, span, {
+
+	font-family: $primary;
+}
