@@ -6,12 +6,42 @@ $head: "phoreuscherokee",sans-serif;
 
 /*=====font families=====*/
 
-h1, h2 {
+h1, h2, h3 {
 
 	font-family: $head;
 }
 
-h3, h4, nav a, p, span, {
+ h4, nav a, p, li, span, {
 
 	font-family: $primary;
 }
+
+
+/*=====font sizes=====*/
+
+h1 {
+	font-size: 3.5em;
+}
+
+h2 {
+	font-size: 2.3em;
+}
+
+h3 {
+	font-size: 2.25em;
+}
+
+p {
+	font-size: 1.25em;
+	line-height: 1.5;
+	font-weight: 300;
+}
+
+/*=====more specifically=====*/
+.fest_intro h2 {
+	padding-bottom: .75em;
+	font-weight: 700;
+}
+
+.partners h2, h3{padding-bottom: .75em;}
+

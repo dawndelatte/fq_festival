@@ -1,0 +1,32 @@
+/*Variables*/
+
+$sm_pad: 3em;
+$lg_pad: 4.687em;
+
+
+body {
+
+	* {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	}
+
+	img {
+		max-width: 100%;
+	}
+}
+
+/*======Home Page ======*/
+
+.fest_intro, .lg_logo, .partners {
+	padding: $sm_pad;
+}
+
+.sub_hero {
+	background: url(http://placekitten.com/400/600) no-repeat;
+	background-size: 100%;
+	width: 400px;
+	height: 400px;
+
+}

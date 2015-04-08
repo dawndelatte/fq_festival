@@ -1,3 +1,23 @@
+/* Mixin */
+/*Variables*/
+/*Variables*/
+body * {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+body img {
+  max-width: 100%; }
+
+/*======Home Page ======*/
+.fest_intro, .lg_logo, .partners {
+  padding: 3em; }
+
+.sub_hero {
+  background: url(http://placekitten.com/400/600) no-repeat;
+  background-size: 100%;
+  width: 400px;
+  height: 400px; }
+
 /**
  * Eric Meyer's Reset CSS v2.0 (http://meyerweb.com/eric/tools/css/reset/)
  * http://cssreset.com
@@ -46,12 +66,53 @@ table {
   border-spacing: 0; }
 
 /*Variables*/
+/*======Home Page ======*/
+.lg_logo {
+  color: #ffffff;
+  background: #c70b0f; }
+
+.fest_intro {
+  color: #4b4648;
+  background: #dce269; }
+
+.partners {
+  color: #ffffff;
+  background: #4c9bac; }
+
+/*======Music Page ======*/
+/*======Food Page ======*/
+/*======Events Page ======*/
+/*======Adopt Page ======*/
+/*Variables*/
 /*=====font families=====*/
-h1, h2 {
+h1, h2, h3 {
   font-family: "phoreuscherokee", sans-serif; }
 
-h3, h4, nav a, p, span {
+h4, nav a, p, li, span {
   font-family: "azo-sans-web", sans-serif; }
+
+/*=====font sizes=====*/
+h1 {
+  font-size: 3.5em; }
+
+h2 {
+  font-size: 2.3em; }
+
+h3 {
+  font-size: 2.25em; }
+
+p {
+  font-size: 1.25em;
+  line-height: 1.5;
+  font-weight: 300; }
+
+/*=====more specifically=====*/
+.fest_intro h2 {
+  padding-bottom: .75em;
+  font-weight: 700; }
+
+.partners h2, h3 {
+  padding-bottom: .75em; }
 
 /*! responsive-nav.js 1.0.38 by @viljamis */
 .nav-collapse ul {
