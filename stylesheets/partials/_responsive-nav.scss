@@ -11,6 +11,7 @@
 .nav-collapse li {
   width: 100%;
   display: block;
+  text-align: right;
 }
 
 .js .nav-collapse {
@@ -27,6 +28,7 @@
 }
 
 .nav-toggle {
+  float: right;
   -webkit-tap-highlight-color: rgba(0,0,0,0);
   -webkit-touch-callout: none;
   -webkit-user-select: none;

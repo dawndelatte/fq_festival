@@ -1,7 +1,7 @@
 /*Variables*/
 
 $logo_favicon: rgb(223, 233, 37);
-$head_red: rgb(199, 11, 15);
+$red: rgb(199, 11, 15);
 $tealish: rgb(76, 155, 172);
 $yellowish: rgb(220, 226, 105);
 $main_nav: rgb(75, 70, 72);
@@ -13,7 +13,7 @@ $lt_text: #ffffff;
 
 .lg_logo {
 	color: $lt_text;
-	background: $head_red;
+	background: $red;
 }
 
 .fest_intro {
@@ -28,6 +28,35 @@ $lt_text: #ffffff;
 
 /*======Music Page ======*/
 
+.stage:first-of-type {
+	background-color: $red;
+	color: $lt_text;
+}
+
+.schedule:first-of-type {
+	background-color: $tealish;
+	color: $lt_text;
+}
+
+.stage:nth-of-type(2n+2) {
+	background-color: $yellowish;
+	color: $dk_text;
+}
+
+.schedule:nth-of-type(2n+2){
+	background-color: $red;
+	color: $lt_text;
+}
+
+.stage:nth-of-type(2n+3) {
+	background-color: $tealish;
+	color: $lt_text;
+}
+
+.schedule:nth-of-type(2n+3){
+	background-color: $yellowish;
+	color: $dk_text;
+}
 
 /*======Food Page ======*/
 
