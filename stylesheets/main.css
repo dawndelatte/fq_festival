@@ -56,10 +56,25 @@ body img {
   max-width: 100%; }
 
 header {
-  overflow: hidden; }
+  overflow: hidden;
+  margin-top: 3em; }
 
 .logo {
-  float: left; }
+  float: left;
+  margin-left: 1em; }
+
+footer {
+  overflow: hidden;
+  background: #4b4648; }
+  footer .foot_nav {
+    float: right; }
+  footer .social_nav li {
+    width: 50px;
+    height: 50px;
+    float: left;
+    margin-right: 2%; }
+    footer .social_nav li:last-of-type {
+      margin-right: 0; }
 
 /*======Home Page ======*/
 .fest_intro, .lg_logo, .partners {
@@ -71,7 +86,76 @@ header {
   width: 400px;
   height: 400px; }
 
+/*======Music Page ======*/
+.stage, .schedule {
+  padding: 3em; }
+
+.map {
+  background: url(http://placekitten.com/400/600) no-repeat;
+  background-size: 100%;
+  width: 400px;
+  height: 200px; }
+
+.day_nav {
+  clear: both;
+  background: #4b4648; }
+  .day_nav li {
+    display: inline-block;
+    width: 25%;
+    padding: 2em; }
+
+.food_nav {
+  clear: both;
+  background: #4b4648; }
+  .food_nav li {
+    display: inline-block;
+    width: 50%;
+    padding: 2em; }
+
+/*======Food Page ======*/
+.vendor_wrap {
+  padding: 3em; }
+
+.beverages {
+  margin-top: 1.5em; }
+
+/*======Events Page ======*/
+.event_wrap {
+  padding: 3em; }
+
+/*======Adopt Page ======*/
+.sponsor_wrap {
+  padding: 3em; }
+
+.sponsor {
+  margin-bottom: 3.5em; }
+  .sponsor:last-of-type {
+    margin-bottom: 0; }
+
 /*Variables*/
+a:visited {
+  color: #4b4648; }
+
+.day_nav a, .food_nav a {
+  color: #ffffff; }
+.day_nav li, .food_nav li {
+  border-right: 2px solid #dfe925; }
+  .day_nav li:last-of-type, .food_nav li:last-of-type {
+    border-right: none; }
+  .day_nav li:hover, .food_nav li:hover {
+    background: #4c9bac; }
+
+footer {
+  padding: 2em 1em; }
+  footer li {
+    margin-bottom: 1em; }
+    footer li a {
+      color: white; }
+      footer li a:visited {
+        color: white; }
+      footer li a:hover {
+        color: #4c9bac; }
+
 /*======Home Page ======*/
 .lg_logo {
   color: #ffffff;
@@ -86,33 +170,66 @@ header {
   background: #4c9bac; }
 
 /*======Music Page ======*/
-.stage:first-of-type {
-  background-color: #c70b0f;
+.stage_wrap:nth-of-type(3n+1) .stage {
+  background: #c70b0f;
+  color: #ffffff; }
+.stage_wrap:nth-of-type(3n+1) .schedule {
+  background: #4c9bac;
   color: #ffffff; }
 
-.schedule:first-of-type {
-  background-color: #4c9bac;
-  color: #ffffff; }
-
-.stage:nth-of-type(2n+2) {
-  background-color: #dce269;
+.stage_wrap:nth-of-type(3n+2) .stage {
+  background: #dce269;
   color: #4b4648; }
-
-.schedule:nth-of-type(2n+2) {
-  background-color: #c70b0f;
+.stage_wrap:nth-of-type(3n+2) .schedule {
+  background: #c70b0f;
   color: #ffffff; }
 
-.stage:nth-of-type(2n+3) {
-  background-color: #4c9bac;
+.stage_wrap:nth-of-type(3n+3) .stage {
+  background: #4c9bac;
   color: #ffffff; }
-
-.schedule:nth-of-type(2n+3) {
-  background-color: #dce269;
+.stage_wrap:nth-of-type(3n+3) .schedule {
+  background: #dce269;
   color: #4b4648; }
 
 /*======Food Page ======*/
+.vendor_wrap:nth-of-type(3n+1) {
+  background: #c70b0f;
+  color: #ffffff; }
+
+.vendor_wrap:nth-of-type(3n+2) {
+  background: #dce269;
+  color: #4b4648; }
+
+.vendor_wrap:nth-of-type(3n+3) {
+  background: #4c9bac;
+  color: #ffffff; }
+
 /*======Events Page ======*/
+.event_wrap:nth-of-type(3n+1) {
+  background: #c70b0f;
+  color: #ffffff; }
+
+.event_wrap:nth-of-type(3n+2) {
+  background: #dce269;
+  color: #4b4648; }
+
+.event_wrap:nth-of-type(3n+3) {
+  background: #4c9bac;
+  color: #ffffff; }
+
 /*======Adopt Page ======*/
+.sponsor_wrap:nth-of-type(3n+1) {
+  background: #c70b0f;
+  color: #ffffff; }
+
+.sponsor_wrap:nth-of-type(3n+2) {
+  background: #dce269;
+  color: #4b4648; }
+
+.sponsor_wrap:nth-of-type(3n+3) {
+  background: #4c9bac;
+  color: #ffffff; }
+
 /*Variables*/
 /*=====font families=====*/
 h1, h2, h3 {
@@ -123,10 +240,10 @@ h4, nav a, p, li, span {
 
 /*=====font sizes=====*/
 h1 {
-  font-size: 3.5em; }
+  font-size: 3.25em; }
 
 h2 {
-  font-size: 2.3em; }
+  font-size: 2.2em; }
 
 h3 {
   font-size: 2.25em; }
@@ -136,12 +253,58 @@ p {
   line-height: 1.5;
   font-weight: 300; }
 
-/*=====more specifically=====*/
+* a {
+  text-decoration: none; }
+
+footer {
+  padding: 2em 1em; }
+  footer li {
+    margin-bottom: 1em;
+    font-weight: 300; }
+
+/*=====Home Page=====*/
 .fest_intro h2 {
   padding-bottom: .75em;
   font-weight: 700; }
 
-.partners h2, h3 {
+.partners h2, .partners h3 {
+  padding: .75em 0; }
+.partners h4 {
+  font-size: 1.5em;
+  padding-bottom: .5em; }
+
+.primary_sponsors li, .secondary_sponsors li {
+  padding-top: .5em; }
+
+.primary_sponsors li {
+  font-size: 1.2em; }
+
+/*=====Music Page=====*/
+.headliner {
+  font-size: 1.5em; }
+
+.stage_wrap p {
+  margin-bottom: 2em; }
+
+.stage_wrap span {
+  font-weight: 700; }
+
+/*=====Food Page=====*/
+.vendor_wrap h2 {
+  padding-bottom: .75em; }
+
+.vendor_wrap p {
+  margin-top: 1em; }
+
+/*=====Events Page=====*/
+.event_wrap h2 {
+  padding-bottom: .75em; }
+
+.event_wrap h1, .event_wrap p, .sponsor_wrap h1 {
+  padding-bottom: 1em; }
+
+/*=====Adopt Page=====*/
+.sponsor_wrap h3 {
   padding-bottom: .75em; }
 
 /*! responsive-nav.js 1.0.38 by @viljamis */
@@ -150,12 +313,32 @@ p {
   padding: 0;
   width: 100%;
   display: block;
-  list-style: none; }
+  list-style: none;
+  overflow: hidden; }
+  .nav-collapse ul li:nth-of-type(1), .nav-collapse ul li:nth-of-type(2), .nav-collapse ul li:nth-of-type(3), .nav-collapse ul li:nth-of-type(4) {
+    background: #4b4648;
+    width: 50%;
+    float: left; }
+    .nav-collapse ul li:nth-of-type(1) a, .nav-collapse ul li:nth-of-type(2) a, .nav-collapse ul li:nth-of-type(3) a, .nav-collapse ul li:nth-of-type(4) a {
+      color: #ffffff;
+      font-size: 1.25em;
+      font-weight: 300; }
+    .nav-collapse ul li:nth-of-type(1):hover, .nav-collapse ul li:nth-of-type(2):hover, .nav-collapse ul li:nth-of-type(3):hover, .nav-collapse ul li:nth-of-type(4):hover {
+      background: #4c9bac; }
+  .nav-collapse ul li:nth-of-type(5), .nav-collapse ul li:nth-of-type(6), .nav-collapse ul li:nth-of-type(7), .nav-collapse ul li:nth-of-type(8) {
+    background: #ffffff;
+    width: 50%;
+    float: left; }
+  .nav-collapse ul li:nth-of-type(2), .nav-collapse ul li:nth-of-type(4), .nav-collapse ul li:nth-of-type(6), .nav-collapse ul li:nth-of-type(8) {
+    border-right: none; }
 
 .nav-collapse li {
   width: 100%;
   display: block;
-  text-align: right; }
+  text-align: right;
+  padding: 1em 1em;
+  border-bottom: 2px solid #dfe925;
+  border-right: 2px solid #dfe925; }
 
 .js .nav-collapse {
   clip: rect(0 0 0 0);
@@ -163,20 +346,28 @@ p {
   position: absolute;
   display: block;
   overflow: hidden;
-  zoom: 1; }
+  zoom: 1;
+  clear: both;
+  margin-top: 2em; }
 
 .nav-collapse.opened {
-  max-height: 9999px; }
+  max-height: 9999px;
+  position: relative;
+  margin-top: 2em; }
 
 .nav-toggle {
-  float: right;
   -webkit-tap-highlight-color: transparent;
   -webkit-touch-callout: none;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
   -o-user-select: none;
-  user-select: none; }
+  user-select: none;
+  float: right;
+  font-size: 1.5em;
+  font-family: "azo-sans-web",sans-serif;
+  margin-bottom: 3em;
+  margin-right: 1em; }
 
 @media screen and (min-width: 40em) {
   .js .nav-collapse {

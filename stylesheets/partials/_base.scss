@@ -20,8 +20,36 @@ body {
 
 header {
 	overflow: hidden;
+	margin-top: 3em;
 }
-.logo {float: left;}
+
+.logo {
+	float: left;
+	margin-left: 1em;
+}
+
+footer {
+	overflow: hidden;
+	background: rgb(75, 70, 72);
+
+	.foot_nav {
+		float: right;
+	}
+
+	.social_nav {
+
+		li {
+			width: 50px;
+			height: 50px;
+			float: left;
+			margin-right: 2%;
+
+			&:last-of-type {
+				margin-right: 0;
+			}
+		}
+	}
+}
 
 /*======Home Page ======*/
 
@@ -35,4 +63,66 @@ header {
 	width: 400px;
 	height: 400px;
 
+}
+/*======Music Page ======*/
+
+.stage, .schedule {
+	padding: $sm_pad;
+}
+
+.map {
+	background: url(http://placekitten.com/400/600) no-repeat;
+	background-size: 100%;
+	width: 400px;
+	height: 200px;
+}
+
+.day_nav {
+	clear:both;
+	background: rgb(75, 70, 72);
+
+	li {
+		display: inline-block;
+		width:25%;
+		padding: 2em;
+	}
+}
+
+.food_nav {
+	clear:both;
+	background: rgb(75, 70, 72);
+
+	li {
+		display: inline-block;
+		width:50%;
+		padding: 2em;
+	}
+}
+
+/*======Food Page ======*/
+.vendor_wrap{
+	padding: $sm_pad;
+}
+.beverages {
+	margin-top: 1.5em;
+}
+
+/*======Events Page ======*/
+
+.event_wrap {
+	padding: $sm_pad;
+}
+
+/*======Adopt Page ======*/
+
+.sponsor_wrap {
+	padding: $sm_pad;
+}
+
+.sponsor {
+	margin-bottom: 3.5em;
+
+	&:last-of-type {
+		margin-bottom: 0;
+	}
 }

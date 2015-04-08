@@ -20,11 +20,11 @@ h1, h2, h3 {
 /*=====font sizes=====*/
 
 h1 {
-	font-size: 3.5em;
+	font-size: 3.25em;
 }
 
 h2 {
-	font-size: 2.3em;
+	font-size: 2.2em;
 }
 
 h3 {
@@ -37,11 +37,87 @@ p {
 	font-weight: 300;
 }
 
-/*=====more specifically=====*/
+* a {
+
+	text-decoration: none;
+}
+
+
+footer {
+
+    padding: 2em 1em;
+
+    li {
+
+    margin-bottom: 1em;
+    font-weight: 300;
+
+    }
+}
+
+/*=====Home Page=====*/
+
 .fest_intro h2 {
 	padding-bottom: .75em;
 	font-weight: 700;
 }
 
-.partners h2, h3{padding-bottom: .75em;}
+.partners {
+	h2, h3 {padding: .75em 0;}
+	h4 {font-size: 1.5em; padding-bottom: .5em;}
+}
 
+.primary_sponsors, .secondary_sponsors {
+	li {
+		padding-top: .5em;
+	}
+}
+
+.primary_sponsors li{
+
+	font-size: 1.2em;
+}
+
+/*=====Music Page=====*/
+
+.headliner {
+
+	font-size: 1.5em;
+
+}
+
+.stage_wrap p {
+	margin-bottom: 2em;
+}
+
+.stage_wrap span {
+	font-weight: 700;
+}
+
+/*=====Food Page=====*/
+
+.vendor_wrap h2 {
+	padding-bottom: .75em;
+}
+
+.vendor_wrap p {
+	margin-top: 1em;
+}
+
+
+/*=====Events Page=====*/
+
+.event_wrap h2 {
+	padding-bottom: .75em;
+}
+
+.event_wrap h1, .event_wrap p, .sponsor_wrap h1 {
+	padding-bottom: 1em;
+}
+
+/*=====Adopt Page=====*/
+
+.sponsor_wrap h3 {
+
+	padding-bottom: .75em;
+}

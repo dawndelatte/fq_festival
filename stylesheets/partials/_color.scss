@@ -9,59 +9,150 @@ $main_nav: rgb(75, 70, 72);
 $dk_text: rgb(75, 70, 72);
 $lt_text: #ffffff;
 
+a {
+    &:visited {
+        color:$dk_text;
+    }
+}
+
+.day_nav, .food_nav {
+
+a {color: $lt_text;}
+
+li {
+    border-right: 2px solid $logo_favicon;
+
+    &:last-of-type {
+        border-right: none;
+    }
+
+    &:hover {
+    background: $tealish;
+    }
+}
+
+}
+
+footer {
+
+    padding: 2em 1em;
+
+    li {
+
+    margin-bottom: 1em;
+
+    a {
+        color: white;
+
+        &:visited {
+            color: white;
+        }
+        &:hover {
+            color: $tealish;
+        }
+        }
+    }
+}
 /*======Home Page ======*/
 
 .lg_logo {
-	color: $lt_text;
-	background: $red;
+    color: $lt_text;
+    background: $red;
 }
 
 .fest_intro {
-	color: $dk_text;
-	background: $yellowish;
+    color: $dk_text;
+    background: $yellowish;
 }
 
 .partners {
-	color: $lt_text;
-	background: $tealish;
+    color: $lt_text;
+    background: $tealish;
 }
 
 /*======Music Page ======*/
 
-.stage:first-of-type {
-	background-color: $red;
-	color: $lt_text;
+.stage_wrap:nth-of-type(3n+1) {
+    .stage {
+        background: $red;
+        color: $lt_text;
+    }
+    .schedule {
+        background: $tealish;
+        color: $lt_text;
+    }
 }
 
-.schedule:first-of-type {
-	background-color: $tealish;
-	color: $lt_text;
+.stage_wrap:nth-of-type(3n+2) {
+    .stage {
+        background: $yellowish;
+        color: $dk_text;
+    }
+    .schedule {
+        background: $red;
+        color: $lt_text;
+    }
 }
 
-.stage:nth-of-type(2n+2) {
-	background-color: $yellowish;
-	color: $dk_text;
-}
-
-.schedule:nth-of-type(2n+2){
-	background-color: $red;
-	color: $lt_text;
-}
-
-.stage:nth-of-type(2n+3) {
-	background-color: $tealish;
-	color: $lt_text;
-}
-
-.schedule:nth-of-type(2n+3){
-	background-color: $yellowish;
-	color: $dk_text;
+.stage_wrap:nth-of-type(3n+3) {
+    .stage {
+        background: $tealish;
+        color: $lt_text;
+    }
+    .schedule {
+        background: $yellowish;
+        color: $dk_text;
+    }
 }
 
 /*======Food Page ======*/
 
+.vendor_wrap:nth-of-type(3n+1) {
+    background: $red;
+    color: $lt_text;
+}
+
+.vendor_wrap:nth-of-type(3n+2) {
+    background: $yellowish;
+    color: $dk_text;
+}
+
+.vendor_wrap:nth-of-type(3n+3) {
+    background: $tealish;
+    color: $lt_text;
+}
 
 /*======Events Page ======*/
 
+.event_wrap:nth-of-type(3n+1) {
+    background: $red;
+    color: $lt_text;
+}
+
+.event_wrap:nth-of-type(3n+2) {
+    background: $yellowish;
+    color: $dk_text;
+}
+
+.event_wrap:nth-of-type(3n+3) {
+    background: $tealish;
+    color: $lt_text;
+}
 
 /*======Adopt Page ======*/
+
+.sponsor_wrap:nth-of-type(3n+1) {
+    background: $red;
+    color: $lt_text;
+}
+
+.sponsor_wrap:nth-of-type(3n+2) {
+    background: $yellowish;
+    color: $dk_text;
+}
+
+.sponsor_wrap:nth-of-type(3n+3) {
+    background: $tealish;
+    color: $lt_text;
+}
+
