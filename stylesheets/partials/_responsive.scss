@@ -1,0 +1,103 @@
+
+@media screen and (min-width: 40em){
+
+
+.foot_nav {
+
+	width: 50%;
+
+	li {
+	display: inline-block;
+}
+}
+.social_nav {
+
+	width: 50%;
+}
+	/*======Home Page ======*/
+
+.sub_hero {
+	display: block;
+	float: left;
+	width: 50%;
+}
+
+.lg_logo {
+	float: left;
+	width: 50%;
+}
+.fest_intro {
+	clear:both;
+}
+
+	.primary_sponsors_col1,.primary_sponsors_col2, .secondary_sponsors_col1, .secondary_sponsors_col2 {
+		width: 45%;
+		float: left;
+		margin-right: 10%;
+		margin-bottom: 2em;
+	}
+
+	.primary_sponsors_col2, .secondary_sponsors_col2 {
+		margin-right: 0;
+	}
+
+.cp_mama {
+	clear: both;
+	overflow: hidden;
+}
+	/*======Music Page ======*/
+
+	.stage, .map {
+		width: 50%;
+		float: left;
+	}
+
+	.schedule {
+		clear: both;
+
+		p {
+			width: 50%
+		}
+
+		span {
+			float: right;
+		}
+	}
+
+	/*======Food Page ======*/
+
+	.vendor_wrap {
+		clear:both;
+		overflow: hidden;
+	}
+.vendor_col1, .vendor_col2 {
+	width: 45%;
+	float: left;
+	margin-right: 10%;
+}
+
+.vendor_col2 {
+	margin-right: 0;
+}
+	/*======Events Page ======*/
+
+	/*======Adopt Page ======*/
+}
+
+
+@media screen and (min-width: 53.125em) {
+
+	/*======Home Page ======*/
+
+
+	/*======Music Page ======*/
+
+
+	/*======Food Page ======*/
+
+
+	/*======Events Page ======*/
+
+
+	/*======Adopt Page ======*/
+}

@@ -34,9 +34,13 @@ footer {
 
 	.foot_nav {
 		float: right;
+		width: 30%;
 	}
 
 	.social_nav {
+		overflow: hidden;
+		float: left;
+		width: 70%;
 
 		li {
 			width: 50px;
@@ -55,14 +59,10 @@ footer {
 
 .fest_intro, .lg_logo, .partners {
 	padding: $sm_pad;
+	overflow: hidden;
 }
-
 .sub_hero {
-	background: url(http://placekitten.com/400/600) no-repeat;
-	background-size: 100%;
-	width: 400px;
-	height: 400px;
-
+	display: none;
 }
 /*======Music Page ======*/
 
@@ -70,32 +70,31 @@ footer {
 	padding: $sm_pad;
 }
 
-.map {
-	background: url(http://placekitten.com/400/600) no-repeat;
-	background-size: 100%;
-	width: 400px;
-	height: 200px;
-}
 
 .day_nav {
 	clear:both;
 	background: rgb(75, 70, 72);
+	text-align: center;
 
 	li {
 		display: inline-block;
 		width:25%;
-		padding: 2em;
+		padding: 1.5em;
+		&:active {
+			background: red;
+		}
 	}
 }
 
 .food_nav {
 	clear:both;
 	background: rgb(75, 70, 72);
+	text-align: center;
 
 	li {
 		display: inline-block;
 		width:50%;
-		padding: 2em;
+		padding: 1.5em;
 	}
 }
 

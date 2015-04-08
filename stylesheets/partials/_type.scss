@@ -54,6 +54,10 @@ footer {
 
     }
 }
+.day_nav, .food_nav {
+	font-size: 1.25em;
+	font-weight: 300;
+}
 
 /*=====Home Page=====*/
 
@@ -67,13 +71,13 @@ footer {
 	h4 {font-size: 1.5em; padding-bottom: .5em;}
 }
 
-.primary_sponsors, .secondary_sponsors {
+.primary_sponsors_col1,.primary_sponsors_col2, .secondary_sponsors_col1, .secondary_sponsors_col2 {
 	li {
 		padding-top: .5em;
 	}
 }
 
-.primary_sponsors li{
+.primary_sponsors_col1 li, .primary_sponsors_col2 li{
 
 	font-size: 1.2em;
 }
@@ -92,7 +96,9 @@ footer {
 
 .stage_wrap span {
 	font-weight: 700;
+	line-height: 1.5;
 }
+
 
 /*=====Food Page=====*/
 
