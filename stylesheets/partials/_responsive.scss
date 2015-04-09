@@ -21,12 +21,12 @@ $lg_pad: 4.6em;
     .sub_hero {
         display: block;
         float: left;
-        width: 50%;
+        width: 60%;
     }
     .lg_logo {
         overflow: hidden;
         .logo_title {
-            width: 50%;
+            width: 40%;
             float: left;
             .sub_hero {
                 width: 50%;
@@ -88,8 +88,14 @@ $lg_pad: 4.6em;
     .gala {
         padding: 0;
     }
-    .gala_title, .gala_photo {
-        width: 50%;
+    .gala_title {
+        width: 40%;
+        float: left;
+    }
+
+    .gala_photo {
+
+        width: 60%;
         float: left;
     }
     /*======Adopt Page ======*/
@@ -116,9 +122,17 @@ $lg_pad: 4.6em;
     }
     
     footer {
-        clear: both;
-        width: 222px;
+        // clear: both;
+        // width: 222px;
+        // float: left;
+        display: none;
+    }
+
+    .side_footer {
+        display: block;
+        background: rgb(75, 70, 72);
         float: left;
+        width: 222px;
     }
 
     .logo {

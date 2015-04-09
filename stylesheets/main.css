@@ -84,6 +84,9 @@ footer {
       footer .social_nav li:last-of-type {
         margin-right: 0; }
 
+.side_footer {
+  display: none; }
+
 /*======Home Page ======*/
 .fest_intro, .partners {
   padding: 3em;
@@ -162,12 +165,12 @@ footer {
   .sub_hero {
     display: block;
     float: left;
-    width: 50%; }
+    width: 60%; }
 
   .lg_logo {
     overflow: hidden; }
     .lg_logo .logo_title {
-      width: 50%;
+      width: 40%;
       float: left; }
       .lg_logo .logo_title .sub_hero {
         width: 50%;
@@ -225,8 +228,12 @@ footer {
   .gala {
     padding: 0; }
 
-  .gala_title, .gala_photo {
-    width: 50%;
+  .gala_title {
+    width: 40%;
+    float: left; }
+
+  .gala_photo {
+    width: 60%;
     float: left; }
 
   /*======Adopt Page ======*/
@@ -248,9 +255,13 @@ footer {
     width: 222px; }
 
   footer {
-    clear: both;
-    width: 222px;
-    float: left; }
+    display: none; }
+
+  .side_footer {
+    display: block;
+    background: #4b4648;
+    float: left;
+    width: 222px; }
 
   .logo {
     float: none;
