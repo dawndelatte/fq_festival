@@ -53,7 +53,10 @@ body * {
   -moz-box-sizing: border-box;
   box-sizing: border-box; }
 body img {
-  max-width: 100%; }
+  max-width: 100%;
+  display: block; }
+body iframe {
+  display: block; }
 
 header {
   overflow: hidden;
@@ -82,7 +85,7 @@ footer {
         margin-right: 0; }
 
 /*======Home Page ======*/
-.fest_intro, .lg_logo, .partners {
+.fest_intro, .partners {
   padding: 3em;
   overflow: hidden; }
 
@@ -125,7 +128,11 @@ footer {
 
 /*======Events Page ======*/
 .event_wrap {
-  padding: 3em; }
+  padding: 3em;
+  overflow: hidden; }
+
+.gala {
+  padding: 0; }
 
 /*======Adopt Page ======*/
 .sponsor_wrap {
@@ -199,11 +206,9 @@ footer {
   /*======Events Page ======*/
   .gala_title, .gala_photo {
     width: 50%;
-    float: left;
-    /*======Adopt Page ======*/ }
-    .gala_title .events_wrap, .gala_photo .events_wrap {
-      clear: both;
-      overflow: hidden; } }
+    float: left; }
+
+  /*======Adopt Page ======*/ }
 @media screen and (min-width: 53.125em) {
   /*======Home Page ======*/
   /*======Music Page ======*/
@@ -345,6 +350,9 @@ footer {
   font-weight: 300; }
 
 /*=====Home Page=====*/
+.lg_logo h1 {
+  padding: 1em; }
+
 .fest_intro h2 {
   padding-bottom: .75em;
   font-weight: 700; }
@@ -385,6 +393,11 @@ footer {
 
 .event_wrap h1, .event_wrap p, .sponsor_wrap h1 {
   padding-bottom: 1em; }
+
+.gala h2 {
+  padding: 1em 1em; }
+.gala p {
+  padding-left: 2em; }
 
 /*=====Adopt Page=====*/
 .sponsor_wrap h3 {

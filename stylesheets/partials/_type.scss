@@ -61,6 +61,10 @@ footer {
 
 /*=====Home Page=====*/
 
+.lg_logo h1 {
+	padding: 1em;
+}
+
 .fest_intro h2 {
 	padding-bottom: .75em;
 	font-weight: 700;
@@ -119,6 +123,17 @@ footer {
 
 .event_wrap h1, .event_wrap p, .sponsor_wrap h1 {
 	padding-bottom: 1em;
+}
+
+.gala {
+
+	h2{
+	padding: 1em 1em;
+}
+p {
+	padding-left: 2em;
+}
+
 }
 
 /*=====Adopt Page=====*/
