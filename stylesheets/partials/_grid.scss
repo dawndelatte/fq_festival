@@ -1,23 +1,21 @@
 /* Mixin */
 
-@mixin grid ($col-num){
-  width: ($col * $col-num);
- 
+@mixin grid($col-num) {
+    width: $col * $col-num;
 }
 
 /*Variables*/
 $global: 100%;
 $col: 8.33%;
 
-
-
 // @media screen and (min-width: 53.125em) {
-
-// .col5 {
-// 	@include grid(5);
-// }
-
-// .col10 {
-// 	@include grid(10);
-// }
+//     .col5 {
+//         @include grid(5);
+//     }
+//     .col10 {
+//         @include grid(10);
+//     }
+//     .col2 {
+//         @include grid(2);
+//     }
 // }

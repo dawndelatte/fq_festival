@@ -138,9 +138,9 @@ footer {
 .sponsor_wrap {
   padding: 3em; }
 
-.sponsor {
+.sponsor_col1, .sponsor_col2 {
   margin-bottom: 3.5em; }
-  .sponsor:last-of-type {
+  .sponsor_col1:last-of-type, .sponsor_col2:last-of-type {
     margin-bottom: 0; }
 
 @media screen and (min-width: 40em) {
@@ -152,15 +152,26 @@ footer {
   .social_nav {
     width: 50%; }
 
+  .logo {
+    float: none; }
+
   /*======Home Page ======*/
+  .fest_intro, .partners {
+    padding: 4.6em; }
+
   .sub_hero {
     display: block;
     float: left;
     width: 50%; }
 
   .lg_logo {
-    float: left;
-    width: 50%; }
+    overflow: hidden; }
+    .lg_logo .logo_title {
+      width: 50%;
+      float: left; }
+      .lg_logo .logo_title .sub_hero {
+        width: 50%;
+        float: left; }
 
   .fest_intro {
     clear: both; }
@@ -179,6 +190,9 @@ footer {
     overflow: hidden; }
 
   /*======Music Page ======*/
+  .stage, .schedule {
+    padding: 4.6em; }
+
   .stage, .map {
     width: 50%;
     float: left; }
@@ -193,7 +207,8 @@ footer {
   /*======Food Page ======*/
   .vendor_wrap {
     clear: both;
-    overflow: hidden; }
+    overflow: hidden;
+    padding: 4.6em; }
 
   .vendor_col1, .vendor_col2 {
     width: 45%;
@@ -204,21 +219,74 @@ footer {
     margin-right: 0; }
 
   /*======Events Page ======*/
+  .event_wrap {
+    padding: 4.6em; }
+
+  .gala {
+    padding: 0; }
+
   .gala_title, .gala_photo {
     width: 50%;
     float: left; }
 
-  /*======Adopt Page ======*/ }
-@media screen and (min-width: 53.125em) {
-  /*======Home Page ======*/
-  /*======Music Page ======*/
-  /*======Food Page ======*/
-  /*======Events Page ======*/
-  /*======Adopt Page ======*/ }
-/*Variables*/
-a:visited {
-  color: #4b4648; }
+  /*======Adopt Page ======*/
+  .sponsor_wrap {
+    overflow: hidden;
+    clear: both;
+    padding: 4.6em; }
 
+  .sponsor_col1, .sponsor_col2 {
+    width: 45%;
+    float: left;
+    margin-right: 10%; }
+
+  .sponsor_col2 {
+    margin-right: 0; } }
+@media screen and (min-width: 53.125em) {
+  header {
+    float: left;
+    width: 222px; }
+
+  footer {
+    clear: both;
+    width: 222px;
+    float: left; }
+
+  .logo {
+    float: none;
+    text-align: center;
+    margin: 0; }
+
+  /*======Home Page ======*/
+  .home_mama {
+    float: right;
+    width: calc(100% - 222px);
+    clear: none; }
+
+  /*======Music Page ======*/
+  .stage_wrap, .day_nav {
+    float: right;
+    width: calc(100% - 222px);
+    clear: none; }
+
+  /*======Food Page ======*/
+  .vendor_wrap, .food_nav {
+    float: right;
+    width: calc(100% - 222px);
+    clear: none; }
+
+  /*======Events Page ======*/
+  .event_wrap {
+    float: right;
+    width: calc(100% - 222px);
+    clear: none; }
+
+  /*======Adopt Page ======*/
+  .sponsor_wrap {
+    float: right;
+    width: calc(100% - 222px);
+    clear: none; } }
+/*Variables*/
 .day_nav a, .food_nav a {
   color: #ffffff; }
 .day_nav li, .food_nav li {
@@ -238,6 +306,9 @@ footer {
         color: white; }
       footer li a:hover {
         color: #4c9bac; }
+
+.logo {
+  color: #4b4648; }
 
 /*======Home Page ======*/
 .lg_logo {
@@ -357,6 +428,9 @@ footer {
   padding-bottom: .75em;
   font-weight: 700; }
 
+.fest_intro p, .fest_intro h2 {
+  max-width: 600px; }
+
 .partners h2, .partners h3 {
   padding: .75em 0; }
 .partners h4 {
@@ -387,6 +461,9 @@ footer {
 .vendor_wrap p {
   margin-top: 1em; }
 
+.vendor_wrap p, .vendor_wrap h1 {
+  max-width: 600px; }
+
 /*=====Events Page=====*/
 .event_wrap h2 {
   padding-bottom: .75em; }
@@ -402,6 +479,9 @@ footer {
 /*=====Adopt Page=====*/
 .sponsor_wrap h3 {
   padding-bottom: .75em; }
+
+.sponsor_wrap p, .sponsor_wrap h1 {
+  max-width: 600px; }
 
 /*! responsive-nav.js 1.0.38 by @viljamis */
 .nav-collapse ul {
@@ -427,6 +507,8 @@ footer {
     background: #ffffff;
     width: 50%;
     float: left; }
+    .nav-collapse ul li:nth-of-type(5) a, .nav-collapse ul li:nth-of-type(6) a, .nav-collapse ul li:nth-of-type(7) a, .nav-collapse ul li:nth-of-type(8) a {
+      color: #4b4648; }
     .nav-collapse ul li:nth-of-type(5) a:hover, .nav-collapse ul li:nth-of-type(6) a:hover, .nav-collapse ul li:nth-of-type(7) a:hover, .nav-collapse ul li:nth-of-type(8) a:hover {
       color: #4c9bac; }
     .nav-collapse ul li:nth-of-type(5) a:visited, .nav-collapse ul li:nth-of-type(6) a:visited, .nav-collapse ul li:nth-of-type(7) a:visited, .nav-collapse ul li:nth-of-type(8) a:visited {
@@ -469,7 +551,11 @@ footer {
   font-size: 1.5em;
   font-family: "azo-sans-web",sans-serif;
   margin-bottom: 3em;
-  margin-right: 1em; }
+  margin-right: 1em;
+  border-bottom: 3px solid #dfe925;
+  color: #4b4648; }
+  .nav-toggle a:visited {
+    color: #4b4648; }
 
 @media screen and (min-width: 40em) {
   .js .nav-collapse {
@@ -490,5 +576,15 @@ footer {
     border-bottom: none; }
   .nav-collapse ul li:nth-of-type(2) {
     border-right: 2px solid #dfe925; } }
+@media screen and (min-width: 53.125em) {
+  .nav-collapse ul li:nth-of-type(1), .nav-collapse ul li:nth-of-type(2), .nav-collapse ul li:nth-of-type(3), .nav-collapse ul li:nth-of-type(4), .nav-collapse ul li:nth-of-type(5), .nav-collapse ul li:nth-of-type(6), .nav-collapse ul li:nth-of-type(7), .nav-collapse ul li:nth-of-type(8) {
+    float: none;
+    width: 100%;
+    border-right: none; }
+  .nav-collapse ul li:nth-of-type(1), .nav-collapse ul li:nth-of-type(2), .nav-collapse ul li:nth-of-type(3), .nav-collapse ul li:nth-of-type(4) {
+    border-bottom: 2px solid #dfe925; }
+
+  .nav-collapse li {
+    padding: 2em 1em; } }
 
 /*# sourceMappingURL=main.css.map */

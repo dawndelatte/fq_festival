@@ -1,108 +1,166 @@
+$lg_pad: 4.6em;
 
-@media screen and (min-width: 40em){
+@media screen and (min-width: 40em) {
+    .foot_nav {
+        width: 50%;
+        li {
+            display: inline-block;
+        }
+    }
+    .social_nav {
+        width: 50%;
+    }
 
-
-.foot_nav {
-
-	width: 50%;
-
-	li {
-	display: inline-block;
+    .logo {
+    	float: none;
+    }
+    /*======Home Page ======*/
+    .fest_intro, .partners {
+        padding: $lg_pad;
+    }
+    .sub_hero {
+        display: block;
+        float: left;
+        width: 50%;
+    }
+    .lg_logo {
+        overflow: hidden;
+        .logo_title {
+            width: 50%;
+            float: left;
+            .sub_hero {
+                width: 50%;
+                float: left;
+            }
+        }
+    }
+    .fest_intro {
+        clear: both;
+    }
+    .primary_sponsors_col1, .primary_sponsors_col2, .secondary_sponsors_col1, .secondary_sponsors_col2 {
+        width: 45%;
+        float: left;
+        margin-right: 10%;
+        margin-bottom: 2em;
+    }
+    .primary_sponsors_col2, .secondary_sponsors_col2 {
+        margin-right: 0;
+    }
+    .cp_mama {
+        clear: both;
+        overflow: hidden;
+    }
+    /*======Music Page ======*/
+    .stage, .schedule {
+        padding: $lg_pad;
+    }
+    .stage, .map {
+        width: 50%;
+        float: left;
+    }
+    .schedule {
+        clear: both;
+        p {
+            width: 50%;
+        }
+        span {
+            float: right;
+        }
+    }
+    /*======Food Page ======*/
+    .vendor_wrap {
+        clear: both;
+        overflow: hidden;
+        padding: $lg_pad;
+    }
+    .vendor_col1, .vendor_col2 {
+        width: 45%;
+        float: left;
+        margin-right: 10%;
+    }
+    .vendor_col2 {
+        margin-right: 0;
+    }
+    /*======Events Page ======*/
+    .event_wrap {
+        padding: $lg_pad;
+    }
+    .gala {
+        padding: 0;
+    }
+    .gala_title, .gala_photo {
+        width: 50%;
+        float: left;
+    }
+    /*======Adopt Page ======*/
+    .sponsor_wrap {
+        overflow: hidden;
+        clear: both;
+        padding: $lg_pad;
+    }
+    .sponsor_col1, .sponsor_col2 {
+        width: 45%;
+        float: left;
+        margin-right: 10%;
+    }
+    .sponsor_col2 {
+        margin-right: 0;
+    }
 }
-}
-.social_nav {
-
-	width: 50%;
-}
-	/*======Home Page ======*/
-
-.sub_hero {
-	display: block;
-	float: left;
-	width: 50%;
-}
-
-.lg_logo {
-	float: left;
-	width: 50%;
-}
-.fest_intro {
-	clear:both;
-}
-
-	.primary_sponsors_col1,.primary_sponsors_col2, .secondary_sponsors_col1, .secondary_sponsors_col2 {
-		width: 45%;
-		float: left;
-		margin-right: 10%;
-		margin-bottom: 2em;
-	}
-
-	.primary_sponsors_col2, .secondary_sponsors_col2 {
-		margin-right: 0;
-	}
-
-.cp_mama {
-	clear: both;
-	overflow: hidden;
-}
-	/*======Music Page ======*/
-
-	.stage, .map {
-		width: 50%;
-		float: left;
-	}
-
-	.schedule {
-		clear: both;
-
-		p {
-			width: 50%
-		}
-
-		span {
-			float: right;
-		}
-	}
-
-	/*======Food Page ======*/
-
-	.vendor_wrap {
-		clear:both;
-		overflow: hidden;
-	}
-.vendor_col1, .vendor_col2 {
-	width: 45%;
-	float: left;
-	margin-right: 10%;
-}
-
-.vendor_col2 {
-	margin-right: 0;
-}
-	/*======Events Page ======*/
-
-.gala_title, .gala_photo {
-	width: 50%;
-	float: left;
-
-}
-	/*======Adopt Page ======*/
-}
-
 
 @media screen and (min-width: 53.125em) {
 
-	/*======Home Page ======*/
+	header {
+        float: left;
+        width: 222px;	
+    }
+    
+    footer {
+        clear: both;
+        width: 222px;
+        float: left;
+    }
+
+    .logo {
+    	float: none;
+    	text-align: center;
+    	margin: 0;
+    }
+    /*======Home Page ======*/
+
+    .home_mama {
+    	float: right;
+        width: calc(100% - 222px);
+        clear: none;
+    }
+
+    /*======Music Page ======*/
+
+    .stage_wrap, .day_nav {
+        float: right;
+        width: calc(100% - 222px);
+        clear: none;
+    }
 
 
-	/*======Music Page ======*/
+    /*======Food Page ======*/
 
+    .vendor_wrap, .food_nav {
+        float: right;
+        width: calc(100% - 222px);
+        clear: none;
+    }
+    /*======Events Page ======*/
 
-	/*======Food Page ======*/
-
-
-	/*======Events Page ======*/
-
-
-	/*======Adopt Page ======*/
+    .event_wrap {
+        float: right;
+        width: calc(100% - 222px);
+        clear: none;
+    }
+    /*======Adopt Page ======*/
+    .sponsor_wrap {
+        float: right;
+        width: calc(100% - 222px);
+        clear: none;
+    }
 }

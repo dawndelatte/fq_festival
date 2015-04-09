@@ -1,141 +1,131 @@
 /*Variables*/
 
 $sm_pad: 3em;
-$lg_pad: 4.687em;
-
 
 body {
-
-	* {
-	-webkit-box-sizing: border-box;
-	-moz-box-sizing: border-box;
-	box-sizing: border-box;
-	}
-
-	img {
-		max-width: 100%;
-		display: block;
-	}
-
-	iframe {
-		display: block;
-	}
+    * {
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+    }
+    img {
+        max-width: 100%;
+        display: block;
+    }
+    iframe {
+        display: block;
+    }
 }
 
-
 header {
-	overflow: hidden;
-	margin-top: 3em;
+    overflow: hidden;
+    margin-top: 3em;
 }
 
 .logo {
-	float: left;
-	margin-left: 1em;
+    float: left;
+    margin-left: 1em;
 }
 
 footer {
-	overflow: hidden;
-	background: rgb(75, 70, 72);
-
-	.foot_nav {
-		float: right;
-		width: 30%;
-	}
-
-	.social_nav {
-		overflow: hidden;
-		float: left;
-		width: 70%;
-
-		li {
-			width: 50px;
-			height: 50px;
-			float: left;
-			margin-right: 2%;
-
-			&:last-of-type {
-				margin-right: 0;
-			}
-		}
-	}
+    overflow: hidden;
+    background: rgb(75, 70, 72);
+    .foot_nav {
+        float: right;
+        width: 30%;
+    }
+    .social_nav {
+        overflow: hidden;
+        float: left;
+        width: 70%;
+        li {
+            width: 50px;
+            height: 50px;
+            float: left;
+            margin-right: 2%;
+            &:last-of-type {
+                margin-right: 0;
+            }
+        }
+    }
 }
 
 /*======Home Page ======*/
 
 .fest_intro, .partners {
-	padding: $sm_pad;
-	overflow: hidden;
+    padding: $sm_pad;
+    overflow: hidden;
 }
+
 .sub_hero {
-	display: none;
+    display: none;
 }
+
 /*======Music Page ======*/
 
 .stage {
-	
-	height: 200px;
-}
-.stage, .schedule {
-	padding: $sm_pad;
+    height: 200px;
 }
 
+.stage, .schedule {
+    padding: $sm_pad;
+}
 
 .day_nav {
-	clear:both;
-	background: rgb(75, 70, 72);
-	text-align: center;
-
-	li {
-		display: inline-block;
-		width:25%;
-		padding: 1.5em;
-		&:active {
-			background: red;
-		}
-	}
+    clear: both;
+    background: rgb(75, 70, 72);
+    text-align: center;
+    li {
+        display: inline-block;
+        width: 25%;
+        padding: 1.5em;
+        &:active {
+            background: red;
+        }
+    }
 }
 
 .food_nav {
-	clear:both;
-	background: rgb(75, 70, 72);
-	text-align: center;
-
-	li {
-		display: inline-block;
-		width:50%;
-		padding: 1.5em;
-	}
+    clear: both;
+    background: rgb(75, 70, 72);
+    text-align: center;
+    li {
+        display: inline-block;
+        width: 50%;
+        padding: 1.5em;
+    }
 }
 
 /*======Food Page ======*/
-.vendor_wrap{
-	padding: $sm_pad;
+
+.vendor_wrap {
+    padding: $sm_pad;
 }
+
 .beverages {
-	margin-top: 1.5em;
+    margin-top: 1.5em;
 }
 
 /*======Events Page ======*/
 
 .event_wrap {
-	padding: $sm_pad;
-	overflow: hidden;
+    padding: $sm_pad;
+    overflow: hidden;
 }
 
 .gala {
-	padding: 0;
+    padding: 0;
 }
 
 /*======Adopt Page ======*/
 
 .sponsor_wrap {
-	padding: $sm_pad;
+    padding: $sm_pad;
 }
 
-.sponsor {
-	margin-bottom: 3.5em;
-
-	&:last-of-type {
-		margin-bottom: 0;
-	}
+.sponsor_col1, .sponsor_col2 {
+    margin-bottom: 3.5em;
+    &:last-of-type {
+        margin-bottom: 0;
+    }
 }

@@ -9,11 +9,6 @@ $main_nav: rgb(75, 70, 72);
 $dk_text: rgb(75, 70, 72);
 $lt_text: #ffffff;
 
-a {
-    &:visited {
-        color:$dk_text;
-    }
-}
 
 .day_nav, .food_nav {
 
@@ -52,6 +47,10 @@ footer {
         }
         }
     }
+}
+
+.logo {
+    color: $dk_text;
 }
 /*======Home Page ======*/
 
