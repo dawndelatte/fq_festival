@@ -123,21 +123,34 @@ footer {
 
 /*======Events Page ======*/
 
-.event_wrap:nth-of-type(3n+1) {
-    background: $red;
-    color: $lt_text;
-}
 
-.event_wrap:nth-of-type(3n+2) {
-    background: $yellowish;
-    color: $dk_text;
-}
+// .event_wrap:nth-of-type(3n+1) {
+//     background: $red;
+//     color: $lt_text;
+// }
 
-.event_wrap:nth-of-type(3n+3) {
+// .event_wrap:nth-of-type(3n+2) {
+//     background: $yellowish;
+//     color: $dk_text;
+// }
+
+// .event_wrap:nth-of-type(3n+3) {
+//     background: $tealish;
+//     color: $lt_text;
+// }
+
+.tealish {
     background: $tealish;
     color: $lt_text;
 }
-
+.red {
+    background: $red;
+    color: $lt_text;
+}
+.yellowish {
+    background: $yellowish;
+    color: $dk_text;
+}
 /*======Adopt Page ======*/
 
 .sponsor_wrap:nth-of-type(3n+1) {

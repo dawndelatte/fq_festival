@@ -29,7 +29,6 @@ header {
 
 footer {
     overflow: hidden;
-    background: rgb(75, 70, 72);
     .foot_nav {
         float: right;
         width: 30%;
@@ -50,8 +49,12 @@ footer {
     }
 }
 
-.side_footer {
-    display: none;
+.top_wrap, .bottom_wrap {
+    overflow: hidden;
+}
+
+.bottom_wrap {
+    background: rgb(75, 70, 72);
 }
 
 /*======Home Page ======*/
@@ -62,6 +65,9 @@ footer {
 }
 
 .sub_hero {
+    background: url(/assets/sub_band.jpg);
+    background-size: cover;
+    height: 300px;
     display: none;
 }
 
@@ -119,6 +125,13 @@ footer {
 
 .gala {
     padding: 0;
+}
+
+.gala_photo {
+    background-image: url(/assets/gala.jpg);
+    background-size: cover;
+    max-height: 300px;
+    height: 300px;
 }
 
 /*======Adopt Page ======*/

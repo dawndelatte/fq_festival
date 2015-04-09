@@ -67,8 +67,7 @@ header {
   margin-left: 1em; }
 
 footer {
-  overflow: hidden;
-  background: #4b4648; }
+  overflow: hidden; }
   footer .foot_nav {
     float: right;
     width: 30%; }
@@ -84,8 +83,11 @@ footer {
       footer .social_nav li:last-of-type {
         margin-right: 0; }
 
-.side_footer {
-  display: none; }
+.top_wrap, .bottom_wrap {
+  overflow: hidden; }
+
+.bottom_wrap {
+  background: #4b4648; }
 
 /*======Home Page ======*/
 .fest_intro, .partners {
@@ -93,6 +95,9 @@ footer {
   overflow: hidden; }
 
 .sub_hero {
+  background: url(/assets/sub_band.jpg);
+  background-size: cover;
+  height: 300px;
   display: none; }
 
 /*======Music Page ======*/
@@ -137,6 +142,12 @@ footer {
 .gala {
   padding: 0; }
 
+.gala_photo {
+  background-image: url(/assets/gala.jpg);
+  background-size: cover;
+  max-height: 300px;
+  height: 300px; }
+
 /*======Adopt Page ======*/
 .sponsor_wrap {
   padding: 3em; }
@@ -165,12 +176,12 @@ footer {
   .sub_hero {
     display: block;
     float: left;
-    width: 60%; }
+    width: 50%; }
 
   .lg_logo {
     overflow: hidden; }
     .lg_logo .logo_title {
-      width: 40%;
+      width: 50%;
       float: left; }
       .lg_logo .logo_title .sub_hero {
         width: 50%;
@@ -229,11 +240,11 @@ footer {
     padding: 0; }
 
   .gala_title {
-    width: 40%;
+    width: 50%;
     float: left; }
 
   .gala_photo {
-    width: 60%;
+    width: 50%;
     float: left; }
 
   /*======Adopt Page ======*/
@@ -255,13 +266,13 @@ footer {
     width: 222px; }
 
   footer {
-    display: none; }
-
-  .side_footer {
-    display: block;
-    background: #4b4648;
-    float: left;
     width: 222px; }
+    footer .social_nav {
+      float: none; }
+      footer .social_nav li {
+        float: none; }
+    footer .foot_nav {
+      float: none; }
 
   .logo {
     float: none;
@@ -370,17 +381,17 @@ footer {
   color: #ffffff; }
 
 /*======Events Page ======*/
-.event_wrap:nth-of-type(3n+1) {
+.tealish {
+  background: #4c9bac;
+  color: #ffffff; }
+
+.red {
   background: #c70b0f;
   color: #ffffff; }
 
-.event_wrap:nth-of-type(3n+2) {
+.yellowish {
   background: #dce269;
   color: #4b4648; }
-
-.event_wrap:nth-of-type(3n+3) {
-  background: #4c9bac;
-  color: #ffffff; }
 
 /*======Adopt Page ======*/
 .sponsor_wrap:nth-of-type(3n+1) {
