@@ -90,6 +90,9 @@ footer {
   display: none; }
 
 /*======Music Page ======*/
+.stage {
+  height: 200px; }
+
 .stage, .schedule {
   padding: 3em; }
 
@@ -194,7 +197,13 @@ footer {
     margin-right: 0; }
 
   /*======Events Page ======*/
-  /*======Adopt Page ======*/ }
+  .gala_title, .gala_photo {
+    width: 50%;
+    float: left;
+    /*======Adopt Page ======*/ }
+    .gala_title .events_wrap, .gala_photo .events_wrap {
+      clear: both;
+      overflow: hidden; } }
 @media screen and (min-width: 53.125em) {
   /*======Home Page ======*/
   /*======Music Page ======*/
