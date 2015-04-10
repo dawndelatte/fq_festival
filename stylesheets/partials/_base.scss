@@ -62,7 +62,17 @@ footer {
 }
 
 /*======Home Page ======*/
+.large_logo {
+    display: none;
+}
 
+.small_logo {
+    width: 60%;
+    padding-bottom: 15px;
+}
+.logo {
+    padding-bottom: 2em;
+}
 .fest_intro, .partners {
     padding: $sm_pad;
     overflow: hidden;
@@ -73,6 +83,15 @@ footer {
     background-size: cover;
     height: 300px;
     display: none;
+}
+
+.hero {
+    max-height: 550px;
+    overflow: hidden;
+}
+
+.cp_mama {
+    max-width: 725px;
 }
 
 /*======Music Page ======*/
@@ -137,7 +156,9 @@ footer {
     max-height: 300px;
     height: 300px;
 }
-
+.gala_info, .events p {
+    max-width: 600px;
+}
 /*======Adopt Page ======*/
 
 .sponsor_wrap {

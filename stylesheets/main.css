@@ -93,6 +93,16 @@ footer {
   background: #4b4648; }
 
 /*======Home Page ======*/
+.large_logo {
+  display: none; }
+
+.small_logo {
+  width: 60%;
+  padding-bottom: 15px; }
+
+.logo {
+  padding-bottom: 2em; }
+
 .fest_intro, .partners {
   padding: 3em;
   overflow: hidden; }
@@ -102,6 +112,13 @@ footer {
   background-size: cover;
   height: 300px;
   display: none; }
+
+.hero {
+  max-height: 550px;
+  overflow: hidden; }
+
+.cp_mama {
+  max-width: 725px; }
 
 /*======Music Page ======*/
 .stage {
@@ -151,6 +168,9 @@ footer {
   max-height: 300px;
   height: 300px; }
 
+.gala_info, .events p {
+  max-width: 600px; }
+
 /*======Adopt Page ======*/
 .sponsor_wrap {
   padding: 3em; }
@@ -161,6 +181,20 @@ footer {
     margin-bottom: 0; }
 
 @media screen and (min-width: 40em) {
+  .small_logo {
+    display: none; }
+
+  .large_logo {
+    display: block;
+    width: 20%;
+    float: left;
+    padding-bottom: 3em; }
+
+  .logo_date {
+    float: left;
+    margin-left: 2em;
+    margin-top: 3em; }
+
   .foot_nav {
     width: 50%; }
     .foot_nav li {
@@ -294,10 +328,26 @@ footer {
     margin: 0; }
 
   /*======Home Page ======*/
+  .large_logo {
+    float: none;
+    width: 80%;
+    margin: 0 auto;
+    padding-bottom: 0; }
+
+  .logo_date {
+    float: none;
+    margin-left: 0; }
+
   .home_mama {
     float: right;
     width: calc(100% - 222px);
     clear: none; }
+
+  .lg_logo h1 {
+    font-size: 3.5em; }
+
+  .sub_hero {
+    height: 350px; }
 
   /*======Music Page ======*/
   .stage_wrap, .day_nav {
@@ -458,7 +508,8 @@ footer {
 
 /*=====Home Page=====*/
 .lg_logo h1 {
-  padding: 1em; }
+  padding: 1em;
+  line-height: 1.2; }
 
 .fest_intro h2 {
   padding-bottom: .75em;
