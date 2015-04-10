@@ -268,11 +268,22 @@ footer {
   footer {
     width: 222px; }
     footer .social_nav {
-      float: none; }
+      float: none;
+      margin: 0 auto;
+      padding-left: 2em;
+      padding-top: 4em; }
       footer .social_nav li {
-        float: none; }
+        float: none;
+        margin-bottom: 3em; }
     footer .foot_nav {
-      float: none; }
+      float: none;
+      text-align: center;
+      width: 100%; }
+      footer .foot_nav li {
+        display: block;
+        margin-bottom: 3em; }
+        footer .foot_nav li:first-of-type {
+          padding-top: 2em; }
 
   .logo {
     float: none;

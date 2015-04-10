@@ -127,14 +127,29 @@ $lg_pad: 4.6em;
 
         .social_nav {
             float: none;
+            margin: 0 auto;
+            padding-left: 2em;
+            padding-top: 4em;
 
             li {
                 float: none;
+                margin-bottom: 3em;
             }
         }
 
         .foot_nav {
             float: none;
+            text-align: center;
+            width: 100%;
+
+            li {
+                display: block;
+                margin-bottom: 3em;
+
+                &:first-of-type {
+                    padding-top: 2em;
+                }
+            }
         }
     }
 
