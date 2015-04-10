@@ -20,6 +20,10 @@ body {
 header {
     overflow: hidden;
     margin-top: 3em;
+
+}
+#locations, #sched_date, #events_date {
+    background-color: rgb(76, 155, 172);
 }
 
 .logo {
