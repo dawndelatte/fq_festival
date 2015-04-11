@@ -73,6 +73,14 @@ footer {
     overflow: hidden;
 }
 
+.fest_intro {
+    background-image: url(../assets/trombone_lg.svg);
+    background-size: 150%;
+    background-repeat: no-repeat;
+    // background-position: center;
+
+}
+
 .sub_hero {
     background: url(../assets/sub_band.jpg);
     background-size: cover;
@@ -90,6 +98,15 @@ footer {
 }
 
 /*======Music Page ======*/
+.stage_wrap:nth-of-type(3n+1) {
+    .schedule {
+        background-image: url(../assets/streetcar_lg.svg);
+        background-size: 110%;
+        background-repeat: no-repeat;
+        background-position: center;
+
+    }
+}
 
 .stage {
     height: 200px;
@@ -149,7 +166,7 @@ footer {
     padding-top: 1em;
     p {
         display: inline-block;
-        margin-right: 2em;
+        margin-right: 1em;
         vertical-align: top;
     }
     img {
@@ -161,6 +178,14 @@ footer {
 
 
 /*======Events Page ======*/
+
+.special {
+    background-image: url(../assets/umbrella_lg.svg);
+    background-size: 85%;
+    background-repeat: no-repeat;
+    background-position: center top;
+
+}
 
 .event_wrap {
     padding: $sm_pad;
@@ -180,6 +205,7 @@ footer {
 .gala_info, .events p {
     max-width: 600px;
 }
+
 /*======Adopt Page ======*/
 
 .sponsor_wrap {

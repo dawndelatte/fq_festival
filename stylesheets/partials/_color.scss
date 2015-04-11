@@ -68,7 +68,7 @@ footer {
 
 .fest_intro {
     color: $dk_text;
-    background: $yellowish;
+    background-color: $yellowish;
 }
 
 .partners {
@@ -84,7 +84,7 @@ footer {
         color: $lt_text;
     }
     .schedule {
-        background: $tealish;
+        background-color: $tealish;
         color: $lt_text;
     }
 }
@@ -147,15 +147,15 @@ footer {
 // }
 
 .tealish {
-    background: $tealish;
+    background-color: $tealish;
     color: $lt_text;
 }
 .red {
-    background: $red;
+    background-color: $red;
     color: $lt_text;
 }
 .yellowish {
-    background: $yellowish;
+    background-color: $yellowish;
     color: $dk_text;
 }
 /*======Adopt Page ======*/

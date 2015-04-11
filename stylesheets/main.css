@@ -101,6 +101,11 @@ footer {
   padding: 3em;
   overflow: hidden; }
 
+.fest_intro {
+  background-image: url(../assets/trombone_lg.svg);
+  background-size: 150%;
+  background-repeat: no-repeat; }
+
 .sub_hero {
   background: url(../assets/sub_band.jpg);
   background-size: cover;
@@ -115,6 +120,12 @@ footer {
   max-width: 725px; }
 
 /*======Music Page ======*/
+.stage_wrap:nth-of-type(3n+1) .schedule {
+  background-image: url(../assets/streetcar_lg.svg);
+  background-size: 110%;
+  background-repeat: no-repeat;
+  background-position: center; }
+
 .stage {
   height: 200px; }
 
@@ -168,7 +179,7 @@ footer {
   padding-top: 1em; }
   .icon_sm p {
     display: inline-block;
-    margin-right: 2em;
+    margin-right: 1em;
     vertical-align: top; }
   .icon_sm img {
     display: inline-block;
@@ -176,6 +187,12 @@ footer {
     margin-right: 5px; }
 
 /*======Events Page ======*/
+.special {
+  background-image: url(../assets/umbrella_lg.svg);
+  background-size: 85%;
+  background-repeat: no-repeat;
+  background-position: center top; }
+
 .event_wrap {
   padding: 3em;
   overflow: hidden; }
@@ -446,7 +463,7 @@ footer {
 
 .fest_intro {
   color: #4b4648;
-  background: #dce269; }
+  background-color: #dce269; }
 
 .partners {
   color: #ffffff;
@@ -457,7 +474,7 @@ footer {
   background: #c70b0f;
   color: #ffffff; }
 .stage_wrap:nth-of-type(3n+1) .schedule {
-  background: #4c9bac;
+  background-color: #4c9bac;
   color: #ffffff; }
 
 .stage_wrap:nth-of-type(3n+2) .stage {
@@ -489,15 +506,15 @@ footer {
 
 /*======Events Page ======*/
 .tealish {
-  background: #4c9bac;
+  background-color: #4c9bac;
   color: #ffffff; }
 
 .red {
-  background: #c70b0f;
+  background-color: #c70b0f;
   color: #ffffff; }
 
 .yellowish {
-  background: #dce269;
+  background-color: #dce269;
   color: #4b4648; }
 
 /*======Adopt Page ======*/
