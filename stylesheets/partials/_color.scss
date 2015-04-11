@@ -114,17 +114,17 @@ footer {
 /*======Food Page ======*/
 
 .vendor_wrap:nth-of-type(3n+1) {
-    background: $red;
+    background-color: $red;
     color: $lt_text;
 }
 
 .vendor_wrap:nth-of-type(3n+2) {
-    background: $yellowish;
+    background-color: $yellowish;
     color: $dk_text;
 }
 
 .vendor_wrap:nth-of-type(3n+3) {
-    background: $tealish;
+    background-color: $tealish;
     color: $lt_text;
 }
 
@@ -161,17 +161,17 @@ footer {
 /*======Adopt Page ======*/
 
 .sponsor_wrap:nth-of-type(3n+1) {
-    background: $red;
+    background-color: $red;
     color: $lt_text;
 }
 
 .sponsor_wrap:nth-of-type(3n+2) {
-    background: $yellowish;
+    background-color: $yellowish;
     color: $dk_text;
 }
 
 .sponsor_wrap:nth-of-type(3n+3) {
-    background: $tealish;
+    background-color: $tealish;
     color: $lt_text;
 }
 

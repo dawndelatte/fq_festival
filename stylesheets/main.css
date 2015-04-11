@@ -101,7 +101,7 @@ footer {
   padding: 3em;
   overflow: hidden; }
 
-.fest_intro {
+.fest_intro, .trombone {
   background-image: url(../assets/trombone_lg.svg);
   background-size: 150%;
   background-repeat: no-repeat; }
@@ -187,7 +187,7 @@ footer {
     margin-right: 5px; }
 
 /*======Events Page ======*/
-.special {
+.umbrella {
   background-image: url(../assets/umbrella_lg.svg);
   background-size: 85%;
   background-repeat: no-repeat;
@@ -493,15 +493,15 @@ footer {
 
 /*======Food Page ======*/
 .vendor_wrap:nth-of-type(3n+1) {
-  background: #c70b0f;
+  background-color: #c70b0f;
   color: #ffffff; }
 
 .vendor_wrap:nth-of-type(3n+2) {
-  background: #dce269;
+  background-color: #dce269;
   color: #4b4648; }
 
 .vendor_wrap:nth-of-type(3n+3) {
-  background: #4c9bac;
+  background-color: #4c9bac;
   color: #ffffff; }
 
 /*======Events Page ======*/
@@ -519,15 +519,15 @@ footer {
 
 /*======Adopt Page ======*/
 .sponsor_wrap:nth-of-type(3n+1) {
-  background: #c70b0f;
+  background-color: #c70b0f;
   color: #ffffff; }
 
 .sponsor_wrap:nth-of-type(3n+2) {
-  background: #dce269;
+  background-color: #dce269;
   color: #4b4648; }
 
 .sponsor_wrap:nth-of-type(3n+3) {
-  background: #4c9bac;
+  background-color: #4c9bac;
   color: #ffffff; }
 
 /*Variables*/
