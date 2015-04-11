@@ -62,9 +62,6 @@ header {
   overflow: hidden;
   margin-top: 3em; }
 
-#locations, #sched_date, #events_date {
-  background-color: #4c9bac; }
-
 .logo {
   float: left;
   margin-left: 1em; }
@@ -88,9 +85,6 @@ footer {
 
 .top_wrap, .bottom_wrap {
   overflow: hidden; }
-
-.bottom_wrap {
-  background: #4b4648; }
 
 /*======Home Page ======*/
 .large_logo {
@@ -128,9 +122,11 @@ footer {
   padding: 3em; }
 
 .day_nav {
-  clear: both;
-  background: #4b4648;
   text-align: center; }
+  .day_nav::after {
+    clear: both;
+    content: "";
+    display: table; }
   .day_nav li {
     display: inline-block;
     width: 25%;
@@ -139,9 +135,11 @@ footer {
       background: red; }
 
 .food_nav {
-  clear: both;
-  background: #4b4648;
   text-align: center; }
+  .food_nav::after {
+    clear: both;
+    content: "";
+    display: table; }
   .food_nav li {
     display: inline-block;
     width: 50%;
@@ -153,6 +151,29 @@ footer {
 
 .beverages {
   margin-top: 1.5em; }
+
+.icon_key {
+  overflow: hidden;
+  margin-top: 2em; }
+
+.veg, .gf {
+  float: left;
+  width: 100px;
+  text-align: center; }
+
+.veg {
+  margin-right: 20%; }
+
+.icon_sm {
+  padding-top: 1em; }
+  .icon_sm p {
+    display: inline-block;
+    margin-right: 2em;
+    vertical-align: top; }
+  .icon_sm img {
+    display: inline-block;
+    width: 30px;
+    margin-right: 5px; }
 
 /*======Events Page ======*/
 .event_wrap {
@@ -180,6 +201,7 @@ footer {
   .sponsor_col1:last-of-type, .sponsor_col2:last-of-type {
     margin-bottom: 0; }
 
+/*Variables*/
 @media screen and (min-width: 40em) {
   .small_logo {
     display: none; }
@@ -343,9 +365,6 @@ footer {
     width: calc(100% - 222px);
     clear: none; }
 
-  .lg_logo h1 {
-    font-size: 3.5em; }
-
   .sub_hero {
     height: 350px; }
 
@@ -361,6 +380,22 @@ footer {
     width: calc(100% - 222px);
     clear: none; }
 
+  .veg, .gf {
+    float: none; }
+
+  .veg {
+    padding-bottom: 2em; }
+
+  .icon_key {
+    margin-top: 0;
+    float: left;
+    width: 20%;
+    margin-left: 20%; }
+
+  .beverages {
+    float: left;
+    width: 50%; }
+
   /*======Events Page ======*/
   .event_wrap {
     float: right;
@@ -373,14 +408,19 @@ footer {
     width: calc(100% - 222px);
     clear: none; } }
 /*Variables*/
-.day_nav a, .food_nav a {
-  color: #ffffff; }
-.day_nav li, .food_nav li {
-  border-right: 2px solid #dfe925; }
-  .day_nav li:last-of-type, .food_nav li:last-of-type {
-    border-right: none; }
-  .day_nav li:hover, .food_nav li:hover {
-    background: #4c9bac; }
+#locations, #sched_date, #events_date {
+  background-color: #4c9bac; }
+
+.day_nav, .food_nav {
+  background: #4b4648; }
+  .day_nav a, .food_nav a {
+    color: #ffffff; }
+  .day_nav li, .food_nav li {
+    border-right: 2px solid #dfe925; }
+    .day_nav li:last-of-type, .food_nav li:last-of-type {
+      border-right: none; }
+    .day_nav li:hover, .food_nav li:hover {
+      background: #4c9bac; }
 
 footer {
   padding: 2em 1em; }
@@ -392,6 +432,9 @@ footer {
         color: white; }
       footer li a:hover {
         color: #4c9bac; }
+
+.bottom_wrap {
+  background: #4b4648; }
 
 .logo {
   color: #4b4648; }
@@ -508,6 +551,7 @@ footer {
 
 /*=====Home Page=====*/
 .lg_logo h1 {
+  font-size: 3.5em;
   padding: 1em;
   line-height: 1.2; }
 
@@ -550,6 +594,9 @@ footer {
 
 .vendor_wrap p, .vendor_wrap h1 {
   max-width: 600px; }
+
+.icon_sm p {
+  margin-top: 0; }
 
 /*=====Events Page=====*/
 .event_wrap h2 {

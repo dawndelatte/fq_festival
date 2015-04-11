@@ -61,7 +61,9 @@ footer {
 
 /*=====Home Page=====*/
 
+
 .lg_logo h1 {
+	font-size: 3.5em;
 	padding: 1em;
 	line-height: 1.2;
 }
@@ -119,6 +121,8 @@ footer {
 .vendor_wrap p, .vendor_wrap h1 {
 	max-width: 600px;
 }
+
+.icon_sm p{margin-top:0;}
 
 /*=====Events Page=====*/
 

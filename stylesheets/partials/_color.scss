@@ -9,8 +9,12 @@ $main_nav: rgb(75, 70, 72);
 $dk_text: rgb(75, 70, 72);
 $lt_text: #ffffff;
 
+#locations, #sched_date, #events_date {
+    background-color: $tealish;
+}
 
 .day_nav, .food_nav {
+    background: $main_nav;
 
 a {color: $lt_text;}
 
@@ -47,6 +51,9 @@ footer {
         }
         }
     }
+}
+.bottom_wrap {
+    background: $main_nav;
 }
 
 .logo {

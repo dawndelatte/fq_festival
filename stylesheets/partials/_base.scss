@@ -2,6 +2,7 @@
 
 $sm_pad: 3em;
 
+
 body {
     * {
         -webkit-box-sizing: border-box;
@@ -21,9 +22,6 @@ header {
     overflow: hidden;
     margin-top: 3em;
 
-}
-#locations, #sched_date, #events_date {
-    background-color: rgb(76, 155, 172);
 }
 
 .logo {
@@ -57,9 +55,6 @@ footer {
     overflow: hidden;
 }
 
-.bottom_wrap {
-    background: rgb(75, 70, 72);
-}
 
 /*======Home Page ======*/
 .large_logo {
@@ -105,8 +100,7 @@ footer {
 }
 
 .day_nav {
-    clear: both;
-    background: rgb(75, 70, 72);
+    @include clearfix;
     text-align: center;
     li {
         display: inline-block;
@@ -119,8 +113,7 @@ footer {
 }
 
 .food_nav {
-    clear: both;
-    background: rgb(75, 70, 72);
+    @include clearfix;
     text-align: center;
     li {
         display: inline-block;
@@ -138,6 +131,34 @@ footer {
 .beverages {
     margin-top: 1.5em;
 }
+.icon_key {
+    overflow: hidden;
+    margin-top: 2em;
+}
+.veg, .gf {
+    float: left;
+    width: 100px;
+    text-align: center;
+}
+
+.veg {
+    margin-right: 20%;
+}
+
+.icon_sm {
+    padding-top: 1em;
+    p {
+        display: inline-block;
+        margin-right: 2em;
+        vertical-align: top;
+    }
+    img {
+        display: inline-block;
+        width: 30px;
+        margin-right: 5px;
+    }
+}
+
 
 /*======Events Page ======*/
 
