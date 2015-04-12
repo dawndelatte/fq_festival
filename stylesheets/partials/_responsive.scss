@@ -117,6 +117,10 @@ $lg_pad: 4.6em;
         width: 50%;
         float: left;
     }
+        .animated_umbrella {
+    position: relative;
+    float: right;
+}
     /*======Adopt Page ======*/
     .sponsor_wrap {
         overflow: hidden;
@@ -239,6 +243,7 @@ $lg_pad: 4.6em;
         width: calc(100% - 222px);
         clear: none;
     }
+
     /*======Adopt Page ======*/
     .sponsor_wrap {
         float: right;

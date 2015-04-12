@@ -205,6 +205,9 @@ footer {
 .gala_info, .events p {
     max-width: 600px;
 }
+.animated_umbrella {
+    width: 170px;
+}
 
 /*======Adopt Page ======*/
 
@@ -217,4 +220,15 @@ footer {
     &:last-of-type {
         margin-bottom: 0;
     }
+}
+
+.animated_trombone {
+    position: relative;
+    width: 170px;
+}
+.animated_trombone_handle {
+    width: 170px;
+    position: absolute;
+    top: 289px;
+    left: 92px;
 }

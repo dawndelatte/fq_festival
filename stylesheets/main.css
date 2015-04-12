@@ -209,6 +209,9 @@ footer {
 .gala_info, .events p {
   max-width: 600px; }
 
+.animated_umbrella {
+  width: 170px; }
+
 /*======Adopt Page ======*/
 .sponsor_wrap {
   padding: 3em; }
@@ -217,6 +220,16 @@ footer {
   margin-bottom: 3.5em; }
   .sponsor_col1:last-of-type, .sponsor_col2:last-of-type {
     margin-bottom: 0; }
+
+.animated_trombone {
+  position: relative;
+  width: 170px; }
+
+.animated_trombone_handle {
+  width: 170px;
+  position: absolute;
+  top: 289px;
+  left: 92px; }
 
 /*Variables*/
 @media screen and (min-width: 40em) {
@@ -322,6 +335,10 @@ footer {
   .gala_photo {
     width: 50%;
     float: left; }
+
+  .animated_umbrella {
+    position: relative;
+    float: right; }
 
   /*======Adopt Page ======*/
   .sponsor_wrap {
@@ -740,5 +757,44 @@ footer {
 
   .nav-collapse li a {
     padding: 1.5em 1em; } }
+/*=====Animation=====*/
+.animated_umbrella {
+  -webkit-animation: wiggle 800ms ease infinite;
+  -moz-animation: wiggle 800ms ease infinite;
+  animation: wiggle 800ms ease infinite; }
+
+.animated_trombone_handle {
+  -webkit-animation: play 3s infinite;
+  -moz-animation: play 3s infinite;
+  animation: play 3s infinite; }
+
+/*=====Key Frames=====*/
+@-webkit-keyframes wiggle {
+  0%, 100% {
+    transform: rotate(0deg); }
+  50% {
+    transform: rotate(35deg); } }
+@-moz-keyframes wiggle {
+  0%, 100% {
+    transform: rotate(0deg); }
+  50% {
+    transform: rotate(35deg); } }
+@keyframes wiggle {
+  0%, 100% {
+    transform: rotate(0deg); }
+  50% {
+    transform: rotate(35deg); } }
+@-webkit-keyframes play {
+  50% {
+    top: 293px;
+    left: 105px; } }
+@-moz-keyframes play {
+  50% {
+    top: 293px;
+    left: 105px; } }
+@keyframes play {
+  50% {
+    top: 293px;
+    left: 105px; } }
 
 /*# sourceMappingURL=main.css.map */

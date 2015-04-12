@@ -1,0 +1,22 @@
+/*=====Animation=====*/
+.animated_umbrella{
+	@include animation (wiggle 800ms ease infinite);
+}
+
+.animated_trombone_handle {
+	@include animation (play 3s infinite);
+}
+
+
+/*=====Key Frames=====*/
+
+@include keyframes (wiggle) {
+    0%, 100% {transform: rotate(0deg);}
+    50% {transform: rotate(35deg);} 
+}
+
+
+@include keyframes (play) {
+
+	50% {top:293px; left: 105px;}
+}
