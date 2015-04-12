@@ -8,6 +8,10 @@
 	@include animation (play 3s infinite);
 }
 
+.animated_streetcar {
+	@include animation (slide 4s ease infinite)
+}
+
 
 /*=====Key Frames=====*/
 
@@ -23,4 +27,8 @@
 	50% {top:118px; left: 1043px;}
 }
 
+@include keyframes (slide) {
+	0%, 100% {left: 0;}
+    50% {left: 50px;} 
+}
 }

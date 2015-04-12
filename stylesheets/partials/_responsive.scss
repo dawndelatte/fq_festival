@@ -206,7 +206,13 @@ $lg_pad: 4.6em;
         width: calc(100% - 222px);
         clear: none;
     }
-
+.animated_streetcar {
+    display: block;
+    position: relative;
+    width: 170px;
+    margin: 0 auto;
+    margin-bottom: 2em;
+}
 
     /*======Food Page ======*/
 

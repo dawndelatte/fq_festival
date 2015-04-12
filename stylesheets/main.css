@@ -145,6 +145,9 @@ footer {
     .day_nav li:active {
       background: red; }
 
+.animated_streetcar {
+  display: none; }
+
 .food_nav {
   text-align: center; }
   .food_nav::after {
@@ -396,6 +399,13 @@ footer {
     float: right;
     width: calc(100% - 222px);
     clear: none; }
+
+  .animated_streetcar {
+    display: block;
+    position: relative;
+    width: 170px;
+    margin: 0 auto;
+    margin-bottom: 2em; }
 
   /*======Food Page ======*/
   .vendor_wrap, .food_nav {
@@ -809,6 +819,11 @@ footer {
     -moz-animation: play 3s infinite;
     animation: play 3s infinite; }
 
+  .animated_streetcar {
+    -webkit-animation: slide 4s ease infinite;
+    -moz-animation: slide 4s ease infinite;
+    animation: slide 4s ease infinite; }
+
   /*=====Key Frames=====*/
   @-webkit-keyframes wiggle {
     0%, 10% {
@@ -842,6 +857,21 @@ footer {
   @keyframes play {
     50% {
       top: 118px;
-      left: 1043px; } } }
+      left: 1043px; } }
+  @-webkit-keyframes slide {
+    0%, 100% {
+      left: 0; }
+    50% {
+      left: 50px; } }
+  @-moz-keyframes slide {
+    0%, 100% {
+      left: 0; }
+    50% {
+      left: 50px; } }
+  @keyframes slide {
+    0%, 100% {
+      left: 0; }
+    50% {
+      left: 50px; } } }
 
 /*# sourceMappingURL=main.css.map */
