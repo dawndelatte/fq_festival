@@ -206,7 +206,7 @@ footer {
     max-width: 600px;
 }
 .animated_umbrella {
-    width: 170px;
+    display: none;
 }
 
 /*======Adopt Page ======*/
@@ -223,12 +223,8 @@ footer {
 }
 
 .animated_trombone {
-    position: relative;
-    width: 170px;
+    display: none;
 }
 .animated_trombone_handle {
-    width: 170px;
-    position: absolute;
-    top: 289px;
-    left: 92px;
+    display: none;
 }

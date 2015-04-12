@@ -210,7 +210,7 @@ footer {
   max-width: 600px; }
 
 .animated_umbrella {
-  width: 170px; }
+  display: none; }
 
 /*======Adopt Page ======*/
 .sponsor_wrap {
@@ -222,14 +222,10 @@ footer {
     margin-bottom: 0; }
 
 .animated_trombone {
-  position: relative;
-  width: 170px; }
+  display: none; }
 
 .animated_trombone_handle {
-  width: 170px;
-  position: absolute;
-  top: 289px;
-  left: 92px; }
+  display: none; }
 
 /*Variables*/
 @media screen and (min-width: 40em) {
@@ -293,9 +289,6 @@ footer {
     overflow: hidden; }
 
   /*======Music Page ======*/
-  .stage, .schedule {
-    padding: 4.6em; }
-
   .stage, .map {
     width: 50%;
     float: left; }
@@ -335,10 +328,6 @@ footer {
   .gala_photo {
     width: 50%;
     float: left; }
-
-  .animated_umbrella {
-    position: relative;
-    float: right; }
 
   /*======Adopt Page ======*/
   .sponsor_wrap {
@@ -436,11 +425,36 @@ footer {
     width: calc(100% - 222px);
     clear: none; }
 
+  .animated_umbrella {
+    display: block;
+    width: 170px;
+    position: relative;
+    float: right; }
+
   /*======Adopt Page ======*/
   .sponsor_wrap {
     float: right;
     width: calc(100% - 222px);
-    clear: none; } }
+    clear: none; }
+
+  .animated_trombone, .animated_trombone_handle {
+    display: block;
+    width: 170px; }
+
+  .animated_trombone {
+    position: relative;
+    float: right;
+    margin-right: 3em; }
+
+  .animated_trombone_handle {
+    position: absolute;
+    top: 114px;
+    left: 1030px; } }
+@media screen and (min-width: 1050px) {
+  .stage, .schedule {
+    padding: 4.6em; }
+    .stage h2, .schedule h2 {
+      font-size: 2.2em; } }
 /*Variables*/
 #locations, #sched_date, #events_date {
   background-color: #4c9bac; }
@@ -619,6 +633,9 @@ footer {
   font-weight: 700;
   line-height: 1.5; }
 
+.stage_wrap h2 {
+  font-size: 2em; }
+
 /*=====Food Page=====*/
 .vendor_wrap h2 {
   padding-bottom: .75em; }
@@ -757,44 +774,51 @@ footer {
 
   .nav-collapse li a {
     padding: 1.5em 1em; } }
-/*=====Animation=====*/
-.animated_umbrella {
-  -webkit-animation: wiggle 800ms ease infinite;
-  -moz-animation: wiggle 800ms ease infinite;
-  animation: wiggle 800ms ease infinite; }
+@media screen and (min-width: 53.125em) {
+  /*=====Animation=====*/
+  .animated_umbrella {
+    -webkit-animation: wiggle 3s ease infinite;
+    -moz-animation: wiggle 3s ease infinite;
+    animation: wiggle 3s ease infinite; }
 
-.animated_trombone_handle {
-  -webkit-animation: play 3s infinite;
-  -moz-animation: play 3s infinite;
-  animation: play 3s infinite; }
+  .animated_trombone_handle {
+    -webkit-animation: play 3s infinite;
+    -moz-animation: play 3s infinite;
+    animation: play 3s infinite; }
 
-/*=====Key Frames=====*/
-@-webkit-keyframes wiggle {
-  0%, 100% {
-    transform: rotate(0deg); }
-  50% {
-    transform: rotate(35deg); } }
-@-moz-keyframes wiggle {
-  0%, 100% {
-    transform: rotate(0deg); }
-  50% {
-    transform: rotate(35deg); } }
-@keyframes wiggle {
-  0%, 100% {
-    transform: rotate(0deg); }
-  50% {
-    transform: rotate(35deg); } }
-@-webkit-keyframes play {
-  50% {
-    top: 293px;
-    left: 105px; } }
-@-moz-keyframes play {
-  50% {
-    top: 293px;
-    left: 105px; } }
-@keyframes play {
-  50% {
-    top: 293px;
-    left: 105px; } }
+  /*=====Key Frames=====*/
+  @-webkit-keyframes wiggle {
+    0%, 10% {
+      transform: rotate(30deg); }
+    11%, 89% {
+      transform: rotate(0deg); }
+    90%, 100% {
+      transform: rotate(30deg); } }
+  @-moz-keyframes wiggle {
+    0%, 10% {
+      transform: rotate(30deg); }
+    11%, 89% {
+      transform: rotate(0deg); }
+    90%, 100% {
+      transform: rotate(30deg); } }
+  @keyframes wiggle {
+    0%, 10% {
+      transform: rotate(30deg); }
+    11%, 89% {
+      transform: rotate(0deg); }
+    90%, 100% {
+      transform: rotate(30deg); } }
+  @-webkit-keyframes play {
+    50% {
+      top: 118px;
+      left: 1043px; } }
+  @-moz-keyframes play {
+    50% {
+      top: 118px;
+      left: 1043px; } }
+  @keyframes play {
+    50% {
+      top: 118px;
+      left: 1043px; } } }
 
 /*# sourceMappingURL=main.css.map */

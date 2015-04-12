@@ -1,6 +1,7 @@
+@media screen and (min-width: 53.125em) {
 /*=====Animation=====*/
-.animated_umbrella{
-	@include animation (wiggle 800ms ease infinite);
+.animated_umbrella {
+	@include animation (wiggle 3s ease infinite);
 }
 
 .animated_trombone_handle {
@@ -11,12 +12,15 @@
 /*=====Key Frames=====*/
 
 @include keyframes (wiggle) {
-    0%, 100% {transform: rotate(0deg);}
-    50% {transform: rotate(35deg);} 
+    0%, 10% {transform: rotate(30deg);}
+    11%, 89% {transform: rotate(0deg);}
+    90%, 100% {transform: rotate(30deg);}
 }
 
 
 @include keyframes (play) {
 
-	50% {top:293px; left: 105px;}
+	50% {top:118px; left: 1043px;}
+}
+
 }

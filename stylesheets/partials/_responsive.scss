@@ -69,9 +69,6 @@ $lg_pad: 4.6em;
         overflow: hidden;
     }
     /*======Music Page ======*/
-    .stage, .schedule {
-        padding: $lg_pad;
-    }
     .stage, .map {
         width: 50%;
         float: left;
@@ -117,10 +114,7 @@ $lg_pad: 4.6em;
         width: 50%;
         float: left;
     }
-        .animated_umbrella {
-    position: relative;
-    float: right;
-}
+
     /*======Adopt Page ======*/
     .sponsor_wrap {
         overflow: hidden;
@@ -206,6 +200,7 @@ $lg_pad: 4.6em;
 
     /*======Music Page ======*/
 
+
     .stage_wrap, .day_nav {
         float: right;
         width: calc(100% - 222px);
@@ -244,10 +239,44 @@ $lg_pad: 4.6em;
         clear: none;
     }
 
+    .animated_umbrella {
+        display: block;
+        width: 170px;
+    position: relative;
+    float: right;
+}
+
     /*======Adopt Page ======*/
     .sponsor_wrap {
         float: right;
         width: calc(100% - 222px);
         clear: none;
     }
+    .animated_trombone, .animated_trombone_handle {
+        display: block;
+        width: 170px;
+    }
+    .animated_trombone {
+        position: relative;
+        float: right;
+        margin-right: 3em;
+    }
+    .animated_trombone_handle {
+        position: absolute;
+        top: 114px;
+        left: 1030px;
+    }
 }
+
+@media screen and (min-width: 1050px){
+    .stage, .schedule {
+        padding: $lg_pad;
+            h2 {
+                font-size: 2.2em;
+            }
+    }
+}
+
+
+
+
