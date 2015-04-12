@@ -145,9 +145,6 @@ footer {
     .day_nav li:active {
       background: red; }
 
-.animated_streetcar {
-  display: none; }
-
 .food_nav {
   text-align: center; }
   .food_nav::after {
@@ -212,9 +209,6 @@ footer {
 .gala_info, .events p {
   max-width: 600px; }
 
-.animated_umbrella {
-  display: none; }
-
 /*======Adopt Page ======*/
 .sponsor_wrap {
   padding: 3em; }
@@ -224,11 +218,30 @@ footer {
   .sponsor_col1:last-of-type, .sponsor_col2:last-of-type {
     margin-bottom: 0; }
 
+/*======Animations ======*/
+.animation_mama a {
+  display: block;
+  padding-bottom: 2em; }
+.animation_mama img {
+  padding-top: 1em; }
+
 .animated_trombone {
-  display: none; }
+  width: 120px;
+  position: relative; }
 
 .animated_trombone_handle {
-  display: none; }
+  width: 120px;
+  position: absolute;
+  top: 1512px;
+  left: 73px; }
+
+.animated_streetcar {
+  width: 120px;
+  position: relative; }
+
+.animated_umbrella {
+  width: 120px;
+  position: relative; }
 
 /*Variables*/
 @media screen and (min-width: 40em) {
@@ -345,6 +358,7 @@ footer {
 
   .sponsor_col2 {
     margin-right: 0; } }
+/*======Animations ======*/
 @media screen and (min-width: 53.125em) {
   header {
     float: left;
@@ -400,13 +414,6 @@ footer {
     width: calc(100% - 222px);
     clear: none; }
 
-  .animated_streetcar {
-    display: block;
-    position: relative;
-    width: 170px;
-    margin: 0 auto;
-    margin-bottom: 2em; }
-
   /*======Food Page ======*/
   .vendor_wrap, .food_nav {
     float: right;
@@ -435,31 +442,11 @@ footer {
     width: calc(100% - 222px);
     clear: none; }
 
-  .animated_umbrella {
-    display: block;
-    width: 170px;
-    position: relative;
-    float: right; }
-
   /*======Adopt Page ======*/
   .sponsor_wrap {
     float: right;
     width: calc(100% - 222px);
-    clear: none; }
-
-  .animated_trombone, .animated_trombone_handle {
-    display: block;
-    width: 170px; }
-
-  .animated_trombone {
-    position: relative;
-    float: right;
-    margin-right: 3em; }
-
-  .animated_trombone_handle {
-    position: absolute;
-    top: 114px;
-    left: 1030px; } }
+    clear: none; } }
 @media screen and (min-width: 1050px) {
   .stage, .schedule {
     padding: 4.6em; }
@@ -517,6 +504,13 @@ footer {
 .partners {
   color: #ffffff;
   background: #4c9bac; }
+
+.animation_mama a {
+  color: #4b4648; }
+  .animation_mama a:visited {
+    color: #4b4648; }
+  .animation_mama a:hover {
+    color: #4c9bac; }
 
 /*======Music Page ======*/
 .stage_wrap:nth-of-type(3n+1) .stage {
@@ -807,71 +801,64 @@ footer {
 
   .nav-collapse li a {
     padding: 1.5em 1em; } }
-@media screen and (min-width: 53.125em) {
-  /*=====Animation=====*/
-  .animated_umbrella {
-    -webkit-animation: wiggle 3s ease infinite;
-    -moz-animation: wiggle 3s ease infinite;
-    animation: wiggle 3s ease infinite; }
+/*=====Animation=====*/
+.animated_umbrella:hover {
+  -webkit-animation: wiggle 1s ease infinite;
+  -moz-animation: wiggle 1s ease infinite;
+  animation: wiggle 1s ease infinite; }
 
-  .animated_trombone_handle {
-    -webkit-animation: play 3s infinite;
-    -moz-animation: play 3s infinite;
-    animation: play 3s infinite; }
+.animated_trombone_handle:hover {
+  -webkit-animation: play 3s infinite;
+  -moz-animation: play 3s infinite;
+  animation: play 3s infinite; }
 
-  .animated_streetcar {
-    -webkit-animation: slide 4s ease infinite;
-    -moz-animation: slide 4s ease infinite;
-    animation: slide 4s ease infinite; }
+.animated_streetcar:hover {
+  -webkit-animation: slide 3s ease infinite;
+  -moz-animation: slide 3s ease infinite;
+  animation: slide 3s ease infinite; }
 
-  /*=====Key Frames=====*/
-  @-webkit-keyframes wiggle {
-    0%, 10% {
-      transform: rotate(30deg); }
-    11%, 89% {
-      transform: rotate(0deg); }
-    90%, 100% {
-      transform: rotate(30deg); } }
-  @-moz-keyframes wiggle {
-    0%, 10% {
-      transform: rotate(30deg); }
-    11%, 89% {
-      transform: rotate(0deg); }
-    90%, 100% {
-      transform: rotate(30deg); } }
-  @keyframes wiggle {
-    0%, 10% {
-      transform: rotate(30deg); }
-    11%, 89% {
-      transform: rotate(0deg); }
-    90%, 100% {
-      transform: rotate(30deg); } }
-  @-webkit-keyframes play {
-    50% {
-      top: 118px;
-      left: 1043px; } }
-  @-moz-keyframes play {
-    50% {
-      top: 118px;
-      left: 1043px; } }
-  @keyframes play {
-    50% {
-      top: 118px;
-      left: 1043px; } }
-  @-webkit-keyframes slide {
-    0%, 100% {
-      left: 0; }
-    50% {
-      left: 50px; } }
-  @-moz-keyframes slide {
-    0%, 100% {
-      left: 0; }
-    50% {
-      left: 50px; } }
-  @keyframes slide {
-    0%, 100% {
-      left: 0; }
-    50% {
-      left: 50px; } } }
+/*=====Key Frames=====*/
+@-webkit-keyframes wiggle {
+  0%, 100% {
+    transform: rotate(0deg); }
+  50% {
+    transform: rotate(30deg); } }
+@-moz-keyframes wiggle {
+  0%, 100% {
+    transform: rotate(0deg); }
+  50% {
+    transform: rotate(30deg); } }
+@keyframes wiggle {
+  0%, 100% {
+    transform: rotate(0deg); }
+  50% {
+    transform: rotate(30deg); } }
+@-webkit-keyframes play {
+  50% {
+    top: 1515px;
+    left: 86px; } }
+@-moz-keyframes play {
+  50% {
+    top: 1515px;
+    left: 86px; } }
+@keyframes play {
+  50% {
+    top: 1515px;
+    left: 86px; } }
+@-webkit-keyframes slide {
+  0%, 100% {
+    left: 0; }
+  50% {
+    left: -50px; } }
+@-moz-keyframes slide {
+  0%, 100% {
+    left: 0; }
+  50% {
+    left: -50px; } }
+@keyframes slide {
+  0%, 100% {
+    left: 0; }
+  50% {
+    left: -50px; } }
 
 /*# sourceMappingURL=main.css.map */

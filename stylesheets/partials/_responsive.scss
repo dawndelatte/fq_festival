@@ -131,6 +131,24 @@ $lg_pad: 4.6em;
     }
 }
 
+    /*======Animations ======*/
+
+//     .animation_mama {
+//         overflow: hidden;
+//     }
+//     .trombone_mama {
+//         float: left;
+//         width: 33.33%;
+// }
+// .streetcar_mama {
+//     float: left;
+//     width: 33.33%;
+// }
+// .umbrella_mama {
+//     float: left;
+//     width: 33.33%;
+// }
+
 @media screen and (min-width: 53.125em) {
 
 	header {
@@ -206,13 +224,6 @@ $lg_pad: 4.6em;
         width: calc(100% - 222px);
         clear: none;
     }
-.animated_streetcar {
-    display: block;
-    position: relative;
-    width: 170px;
-    margin: 0 auto;
-    margin-bottom: 2em;
-}
 
     /*======Food Page ======*/
 
@@ -245,12 +256,6 @@ $lg_pad: 4.6em;
         clear: none;
     }
 
-    .animated_umbrella {
-        display: block;
-        width: 170px;
-    position: relative;
-    float: right;
-}
 
     /*======Adopt Page ======*/
     .sponsor_wrap {
@@ -258,20 +263,30 @@ $lg_pad: 4.6em;
         width: calc(100% - 222px);
         clear: none;
     }
-    .animated_trombone, .animated_trombone_handle {
-        display: block;
-        width: 170px;
-    }
-    .animated_trombone {
-        position: relative;
-        float: right;
-        margin-right: 3em;
-    }
-    .animated_trombone_handle {
-        position: absolute;
-        top: 114px;
-        left: 1030px;
-    }
+
+
+//     /*======Animations ======*/
+
+//     // .animation_mama {
+//     //     float: right;
+//     // }
+//     .animated_trombone {
+//         position: relative;
+//     }
+//     .animated_trombone_handle {
+//         position: absolute;
+//         top: 1000px;
+//         left: 1085px;
+//     }
+// }
+// .animated_streetcar {
+//     position: relative;
+//     margin: 0 auto;
+//     margin-bottom: 2em;
+// }
+// .animated_umbrella {
+//     position: relative;
+// }
 }
 
 @media screen and (min-width: 1050px){

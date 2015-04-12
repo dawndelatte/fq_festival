@@ -129,7 +129,6 @@ footer {
     }
 }
 
-.animated_streetcar {display: none;}
 
 .food_nav {
     @include clearfix;
@@ -207,9 +206,6 @@ footer {
 .gala_info, .events p {
     max-width: 600px;
 }
-.animated_umbrella {
-    display: none;
-}
 
 /*======Adopt Page ======*/
 
@@ -223,10 +219,34 @@ footer {
         margin-bottom: 0;
     }
 }
+/*======Animations ======*/
+.animation_mama {
 
-.animated_trombone {
-    display: none;
+a {
+    display: block;
+    padding-bottom: 2em;
 }
-.animated_trombone_handle {
-    display: none;
+
+img {
+    padding-top: 1em;
+}
+}
+    .animated_trombone {
+        width: 120px;
+        position: relative;
+    }
+    .animated_trombone_handle {
+        width: 120px;
+        position: absolute;
+        top: 1512px;
+        left: 73px;
+    }
+
+.animated_streetcar {
+    width: 120px;
+    position: relative;
+}
+.animated_umbrella {
+    width: 120px;
+    position: relative;
 }

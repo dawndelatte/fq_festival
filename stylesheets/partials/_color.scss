@@ -82,6 +82,13 @@ footer {
     background: $tealish;
 }
 
+.animation_mama a {
+    color:$dk_text;
+
+    &:visited {color:$dk_text;}
+    &:hover {color:$tealish;}
+
+}
 /*======Music Page ======*/
 
 .stage_wrap:nth-of-type(3n+1) {
