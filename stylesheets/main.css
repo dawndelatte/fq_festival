@@ -464,7 +464,10 @@ footer {
   .day_nav a, .food_nav a {
     color: #ffffff; }
   .day_nav li, .food_nav li {
-    border-right: 2px solid #dfe925; }
+    border-right: 2px solid #dfe925;
+    -webkit-transition: background 300ms linear;
+    -moz-transition: background 300ms linear;
+    transition: background 300ms linear; }
     .day_nav li:last-of-type, .food_nav li:last-of-type {
       border-right: none; }
     .day_nav li:hover, .food_nav li:hover {
@@ -479,7 +482,12 @@ footer {
       footer li a:visited {
         color: white; }
       footer li a:hover {
-        color: #4c9bac; }
+        color: #dfe925; }
+      footer li a svg:hover #twitter-4-icon, footer li a svg:hover #youtube-4-icon, footer li a svg:hover #facebook-circle-icon, footer li a svg:hover #instagram-circle-icon {
+        fill: #dfe925;
+        -webkit-transition: fill 300ms linear;
+        -moz-transition: fill 300ms linear;
+        transition: fill 300ms linear; }
 
 .bottom_wrap {
   background: #4b4648; }
@@ -560,6 +568,18 @@ footer {
 .sponsor_wrap:nth-of-type(3n+3) {
   background-color: #4c9bac;
   color: #ffffff; }
+
+.intro a {
+  color: #ffffff;
+  border-bottom: 2px solid #4c9bac; }
+  .intro a:hover {
+    border-bottom: 2px solid #4c9bac; }
+
+.outro a {
+  color: #4b4648;
+  border-bottom: 2px solid #4c9bac; }
+  .outro a:hover {
+    border-bottom: 2px solid #4c9bac; }
 
 /*Variables*/
 /*=====font families=====*/
@@ -693,21 +713,24 @@ footer {
     float: left;
     color: #ffffff;
     font-size: 1.25em;
-    font-weight: 300; }
-    .nav-collapse ul .block:hover {
-      background: #4c9bac; }
+    font-weight: 300;
+    -webkit-transition: background 300ms linear;
+    -moz-transition: background 300ms linear;
+    transition: background 300ms linear; }
     .nav-collapse ul .block:visited {
       color: white; }
+    .nav-collapse ul .block:hover {
+      background: #4c9bac; }
   .nav-collapse ul .non-block {
     display: block;
     background: #ffffff;
     width: 50%;
     float: left;
     color: #4b4648; }
-    .nav-collapse ul .non-block:hover {
-      color: #4c9bac; }
-    .nav-collapse ul .non-block:visited {
-      color: #4b4648; }
+  .nav-collapse ul .non-block:visited {
+    color: #4b4648; }
+  .nav-collapse ul .non-block:hover {
+    color: #4c9bac; }
 
 .js .nav-collapse {
   clip: rect(0 0 0 0);

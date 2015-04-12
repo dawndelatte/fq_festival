@@ -27,11 +27,14 @@
         color: #ffffff;
         font-size: 1.25em;
         font-weight: 300;
-        &:hover {
-            background: rgb(76, 155, 172);
-        }
+        @include transition (background 300ms linear);
+
         &:visited {
             color: white;
+        }
+
+        &:hover {
+            background: rgb(76, 155, 172);
         }
     }
     
@@ -41,13 +44,9 @@
         width: 50%;
         float: left;
         color: rgb(75, 70, 72);
-    &:hover {
-        color: rgb(76, 155, 172);
-    }
-    &:visited {
-        color: rgb(75, 70, 72);
-    }
 }
+.non-block:visited {color:rgb(75, 70, 72);}
+.non-block:hover {color:rgb(76, 155, 172);}
 }
 
 

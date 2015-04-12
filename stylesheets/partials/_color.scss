@@ -20,6 +20,7 @@ a {color: $lt_text;}
 
 li {
     border-right: 2px solid $logo_favicon;
+    @include transition (background 300ms linear);
 
     &:last-of-type {
         border-right: none;
@@ -47,7 +48,12 @@ footer {
             color: white;
         }
         &:hover {
-            color: $tealish;
+            color: $logo_favicon;
+        }
+
+        svg:hover #twitter-4-icon, svg:hover #youtube-4-icon, svg:hover #facebook-circle-icon, svg:hover #instagram-circle-icon {
+            fill: $logo_favicon;
+            @include transition (fill 300ms linear);
         }
         }
     }
@@ -173,5 +179,22 @@ footer {
 .sponsor_wrap:nth-of-type(3n+3) {
     background-color: $tealish;
     color: $lt_text;
+}
+
+.intro a{
+    color: $lt_text;
+    border-bottom: 2px solid $tealish;
+
+    &:hover {
+        border-bottom: 2px solid $tealish;
+    }
+}
+.outro a{
+    color: $dk_text;
+    border-bottom: 2px solid $tealish;
+
+    &:hover {
+        border-bottom: 2px solid $tealish;
+    }
 }
 
