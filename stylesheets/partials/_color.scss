@@ -49,6 +49,7 @@ footer {
         }
         &:hover {
             color: $logo_favicon;
+            @include transition (color 300ms linear);
         }
 
         svg:hover #twitter-4-icon, svg:hover #youtube-4-icon, svg:hover #facebook-circle-icon, svg:hover #instagram-circle-icon {
@@ -86,7 +87,7 @@ footer {
     color:$dk_text;
 
     &:visited {color:$dk_text;}
-    &:hover {color:$tealish;}
+    &:hover {color:$tealish;@include transition (color 300ms linear);}
 
 }
 /*======Music Page ======*/
@@ -170,6 +171,14 @@ footer {
 .yellowish {
     background-color: $yellowish;
     color: $dk_text;
+}
+.gala_info a{
+    color: $lt_text;
+    border-bottom: 2px solid $yellowish;
+
+    &:hover {
+        border-bottom: 2px solid $yellowish;
+    }
 }
 /*======Adopt Page ======*/
 

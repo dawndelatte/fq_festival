@@ -46,7 +46,7 @@
         color: rgb(75, 70, 72);
 }
 .non-block:visited {color:rgb(75, 70, 72);}
-.non-block:hover {color:rgb(76, 155, 172);}
+.non-block:hover {color:rgb(76, 155, 172);@include transition (color 300ms linear);}
 }
 
 

@@ -119,6 +119,31 @@ footer {
 .cp_mama {
   max-width: 725px; }
 
+.chevron {
+  overflow: hidden; }
+  .chevron img {
+    width: 40px;
+    float: left;
+    margin-right: 2em; }
+  .chevron h4 {
+    float: left;
+    padding-top: .25em; }
+
+.capital_one {
+  overflow: hidden;
+  float: left;
+  margin-top: 2em; }
+  .capital_one img {
+    width: 50px;
+    float: left;
+    margin-right: 1em; }
+  .capital_one h4 {
+    float: left; }
+
+.primary_sponsors_col1 {
+  clear: both;
+  margin-top: 2em; }
+
 /*======Music Page ======*/
 .stage_wrap:nth-of-type(3n+1) .schedule {
   background-image: url(../assets/streetcar_lg.svg);
@@ -219,29 +244,38 @@ footer {
     margin-bottom: 0; }
 
 /*======Animations ======*/
-.animation_mama a {
-  display: block;
-  padding-bottom: 2em; }
-.animation_mama img {
-  padding-top: 1em; }
-
-.animated_trombone {
-  width: 120px;
-  position: relative; }
-
-.animated_trombone_handle {
-  width: 120px;
-  position: absolute;
-  top: 1512px;
-  left: 73px; }
-
-.animated_streetcar {
-  width: 120px;
-  position: relative; }
-
-.animated_umbrella {
-  width: 120px;
-  position: relative; }
+.animation_mama {
+  width: 50%;
+  margin: 0 auto;
+  padding-top: 3em; }
+  .animation_mama a {
+    display: block;
+    padding-bottom: 4em; }
+  .animation_mama img {
+    padding-top: 1em; }
+  .animation_mama .trombone_mama {
+    width: 120px;
+    height: 100px;
+    position: relative; }
+    .animation_mama .trombone_mama img {
+      position: absolute; }
+    .animation_mama .trombone_mama .animated_trombone {
+      width: 120px; }
+    .animation_mama .trombone_mama .animated_trombone_handle {
+      width: 120px;
+      top: 35px;
+      left: 30px; }
+  .animation_mama .animated_trombone_handle {
+    width: 120px;
+    position: absolute;
+    top: 1512px;
+    left: 73px; }
+  .animation_mama .animated_streetcar {
+    width: 120px;
+    position: relative; }
+  .animation_mama .animated_umbrella {
+    width: 120px;
+    position: relative; }
 
 /*Variables*/
 @media screen and (min-width: 40em) {
@@ -304,6 +338,9 @@ footer {
     clear: both;
     overflow: hidden; }
 
+  .primary_sponsors_col2 {
+    margin-top: 2em; }
+
   /*======Music Page ======*/
   .stage, .map {
     width: 50%;
@@ -357,8 +394,15 @@ footer {
     margin-right: 10%; }
 
   .sponsor_col2 {
-    margin-right: 0; } }
-/*======Animations ======*/
+    margin-right: 0; }
+
+  /*======Animations ======*/
+  .animation_mama {
+    width: 100%; }
+    .animation_mama a {
+      display: inline-block;
+      margin-right: 5%;
+      padding-bottom: 0; } }
 @media screen and (min-width: 53.125em) {
   header {
     float: left;
@@ -451,7 +495,10 @@ footer {
   .stage, .schedule {
     padding: 4.6em; }
     .stage h2, .schedule h2 {
-      font-size: 2.2em; } }
+      font-size: 2.2em; }
+
+  .animation_mama a {
+    margin-right: 10%; } }
 /*Variables*/
 #locations, #sched_date, #events_date {
   background-color: #4c9bac; }
@@ -479,7 +526,10 @@ footer {
       footer li a:visited {
         color: white; }
       footer li a:hover {
-        color: #dfe925; }
+        color: #dfe925;
+        -webkit-transition: color 300ms linear;
+        -moz-transition: color 300ms linear;
+        transition: color 300ms linear; }
       footer li a svg:hover #twitter-4-icon, footer li a svg:hover #youtube-4-icon, footer li a svg:hover #facebook-circle-icon, footer li a svg:hover #instagram-circle-icon {
         fill: #dfe925;
         -webkit-transition: fill 300ms linear;
@@ -510,7 +560,10 @@ footer {
   .animation_mama a:visited {
     color: #4b4648; }
   .animation_mama a:hover {
-    color: #4c9bac; }
+    color: #4c9bac;
+    -webkit-transition: color 300ms linear;
+    -moz-transition: color 300ms linear;
+    transition: color 300ms linear; }
 
 /*======Music Page ======*/
 .stage_wrap:nth-of-type(3n+1) .stage {
@@ -559,6 +612,12 @@ footer {
 .yellowish {
   background-color: #dce269;
   color: #4b4648; }
+
+.gala_info a {
+  color: #ffffff;
+  border-bottom: 2px solid #dce269; }
+  .gala_info a:hover {
+    border-bottom: 2px solid #dce269; }
 
 /*======Adopt Page ======*/
 .sponsor_wrap:nth-of-type(3n+1) {
@@ -734,7 +793,10 @@ footer {
   .nav-collapse ul .non-block:visited {
     color: #4b4648; }
   .nav-collapse ul .non-block:hover {
-    color: #4c9bac; }
+    color: #4c9bac;
+    -webkit-transition: color 300ms linear;
+    -moz-transition: color 300ms linear;
+    transition: color 300ms linear; }
 
 .js .nav-collapse {
   clip: rect(0 0 0 0);
@@ -802,20 +864,20 @@ footer {
   .nav-collapse li a {
     padding: 1.5em 1em; } }
 /*=====Animation=====*/
-.animated_umbrella:hover {
+a:hover .animated_umbrella {
   -webkit-animation: wiggle 1s ease infinite;
   -moz-animation: wiggle 1s ease infinite;
   animation: wiggle 1s ease infinite; }
 
-.animated_trombone_handle:hover {
-  -webkit-animation: play 3s infinite;
-  -moz-animation: play 3s infinite;
-  animation: play 3s infinite; }
+a:hover .animated_trombone_handle {
+  -webkit-animation: play 2s infinite;
+  -moz-animation: play 2s infinite;
+  animation: play 2s infinite; }
 
-.animated_streetcar:hover {
-  -webkit-animation: slide 3s ease infinite;
-  -moz-animation: slide 3s ease infinite;
-  animation: slide 3s ease infinite; }
+a:hover .animated_streetcar {
+  -webkit-animation: slide 2s ease infinite;
+  -moz-animation: slide 2s ease infinite;
+  animation: slide 2s ease infinite; }
 
 /*=====Key Frames=====*/
 @-webkit-keyframes wiggle {
@@ -835,30 +897,30 @@ footer {
     transform: rotate(30deg); } }
 @-webkit-keyframes play {
   50% {
-    top: 1515px;
-    left: 86px; } }
+    top: 39px;
+    left: 43px; } }
 @-moz-keyframes play {
   50% {
-    top: 1515px;
-    left: 86px; } }
+    top: 39px;
+    left: 43px; } }
 @keyframes play {
   50% {
-    top: 1515px;
-    left: 86px; } }
+    top: 39px;
+    left: 43px; } }
 @-webkit-keyframes slide {
   0%, 100% {
     left: 0; }
   50% {
-    left: -50px; } }
+    left: -40px; } }
 @-moz-keyframes slide {
   0%, 100% {
     left: 0; }
   50% {
-    left: -50px; } }
+    left: -40px; } }
 @keyframes slide {
   0%, 100% {
     left: 0; }
   50% {
-    left: -50px; } }
+    left: -40px; } }
 
 /*# sourceMappingURL=main.css.map */

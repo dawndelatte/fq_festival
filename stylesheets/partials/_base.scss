@@ -2,7 +2,6 @@
 
 $sm_pad: 3em;
 
-
 body {
     * {
         -webkit-box-sizing: border-box;
@@ -21,7 +20,6 @@ body {
 header {
     overflow: hidden;
     margin-top: 3em;
-
 }
 
 .logo {
@@ -55,7 +53,6 @@ footer {
     overflow: hidden;
 }
 
-
 /*======Home Page ======*/
 .large_logo {
     display: none;
@@ -65,9 +62,11 @@ footer {
     width: 60%;
     padding-bottom: 15px;
 }
+
 .logo {
     padding-bottom: 2em;
 }
+
 .fest_intro, .partners {
     padding: $sm_pad;
     overflow: hidden;
@@ -78,7 +77,6 @@ footer {
     background-size: 150%;
     background-repeat: no-repeat;
     // background-position: center;
-
 }
 
 .sub_hero {
@@ -97,6 +95,39 @@ footer {
     max-width: 725px;
 }
 
+.chevron {
+    overflow: hidden;
+
+img {
+    width: 40px;
+    float: left;
+    margin-right: 2em;
+}
+
+h4 {
+    float: left;
+    padding-top: .25em;
+}
+
+}
+.capital_one  {
+    overflow: hidden;
+    float: left;
+    margin-top: 2em;
+img {
+    width: 50px;
+    float: left;
+    margin-right: 1em;
+}
+h4 {
+    float: left;
+}
+}
+
+.primary_sponsors_col1 {
+    clear: both;
+    margin-top: 2em;
+}
 /*======Music Page ======*/
 .stage_wrap:nth-of-type(3n+1) {
     .schedule {
@@ -104,7 +135,6 @@ footer {
         background-size: 110%;
         background-repeat: no-repeat;
         background-position: center;
-
     }
 }
 
@@ -129,7 +159,6 @@ footer {
     }
 }
 
-
 .food_nav {
     @include clearfix;
     text-align: center;
@@ -149,10 +178,12 @@ footer {
 .beverages {
     margin-top: 1.5em;
 }
+
 .icon_key {
     overflow: hidden;
     margin-top: 2em;
 }
+
 .veg, .gf {
     float: left;
     width: 100px;
@@ -177,15 +208,13 @@ footer {
     }
 }
 
-
 /*======Events Page ======*/
 
-.umbrella   {
+.umbrella {
     background-image: url(../assets/umbrella_lg.svg);
     background-size: 85%;
     background-repeat: no-repeat;
     background-position: center top;
-
 }
 
 .event_wrap {
@@ -203,6 +232,7 @@ footer {
     max-height: 300px;
     height: 300px;
 }
+
 .gala_info, .events p {
     max-width: 600px;
 }
@@ -219,34 +249,55 @@ footer {
         margin-bottom: 0;
     }
 }
+
 /*======Animations ======*/
+
 .animation_mama {
+    width: 50%;
+    margin: 0 auto;
+    padding-top: 3em;
 
-a {
-    display: block;
-    padding-bottom: 2em;
-}
+    a {
+        display: block;
+        padding-bottom: 4em;
+    }
 
-img {
-    padding-top: 1em;
-}
-}
+    img {
+        padding-top: 1em;
+    }
+
+.trombone_mama {
+  width: 120px;
+  height: 100px;
+  position: relative;
+
+  img {
+    position:absolute;
+    }
     .animated_trombone {
         width: 120px;
-        position: relative;
     }
     .animated_trombone_handle {
         width: 120px;
-        position: absolute;
-        top: 1512px;
-        left: 73px;
+        top: 35px;
+        left: 30px;
     }
+}
+
+.animated_trombone_handle {
+    width: 120px;
+    position: absolute;
+    top: 1512px;
+    left: 73px;
+}
 
 .animated_streetcar {
     width: 120px;
     position: relative;
 }
+
 .animated_umbrella {
     width: 120px;
     position: relative;
+}
 }
