@@ -552,12 +552,11 @@ footer {
 .partners {
   color: #ffffff;
   background: #4c9bac; }
-
-.bottom_wrap h2 {
-  color: #2d5b65;
-  font-size: 2.75em; }
-.bottom_wrap h3 {
-  color: #2d5b65; }
+  .partners h2 {
+    color: #2d5b65;
+    font-size: 2.75em; }
+  .partners h3 {
+    color: #2d5b65; }
 
 .animation_mama a {
   color: #4b4648; }
@@ -692,9 +691,13 @@ footer {
 
 .fest_intro h2 {
   padding-bottom: .75em;
-  font-weight: 700; }
-
-.fest_intro p, .fest_intro h2 {
+  font-weight: 700;
+  font-size: 2.5em;
+  max-width: 600px; }
+.fest_intro h3 {
+  font-size: 2em;
+  margin-bottom: 1em; }
+.fest_intro p {
   max-width: 600px; }
 
 .partners h2, .partners h3 {
