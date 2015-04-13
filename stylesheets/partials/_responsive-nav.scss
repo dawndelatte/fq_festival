@@ -7,9 +7,10 @@
     padding: 1em 1em;
     border-bottom: 2px solid rgb(223, 233, 37);
 }
+
 .md_bord {
-        border-right: 2px solid rgb(223, 233, 37);
-    }
+    border-right: 2px solid rgb(223, 233, 37);
+}
 
 .nav-collapse ul {
     margin: 0;
@@ -18,7 +19,6 @@
     display: block;
     list-style: none;
     overflow: hidden;
-
     .block {
         display: block;
         background: rgb(75, 70, 72);
@@ -27,28 +27,29 @@
         color: #ffffff;
         font-size: 1.25em;
         font-weight: 300;
-        @include transition (background 300ms linear);
-
+        @include transition(background 300ms linear);
         &:visited {
             color: white;
         }
-
         &:hover {
             background: rgb(76, 155, 172);
         }
     }
-    
     .non-block {
         display: block;
         background: #ffffff;
         width: 50%;
         float: left;
         color: rgb(75, 70, 72);
+    }
+    .non-block:visited {
+        color: rgb(75, 70, 72);
+    }
+    .non-block:hover {
+        color: rgb(76, 155, 172);
+        @include transition(color 300ms linear);
+    }
 }
-.non-block:visited {color:rgb(75, 70, 72);}
-.non-block:hover {color:rgb(76, 155, 172);@include transition (color 300ms linear);}
-}
-
 
 .js .nav-collapse {
     clip: rect(0 0 0 0);
@@ -76,6 +77,7 @@
     -o-user-select: none;
     user-select: none;
     float: right;
+    // background-image: url(assets/hamburger.svg);
     font-size: 1.5em;
     font-family: "azo-sans-web",sans-serif;
     margin-bottom: 3em;
@@ -102,8 +104,7 @@
         display: none;
     }
     .nav-collapse ul {
-        
-        .block, .non-block{
+        .block, .non-block {
             width: 25%;
             text-align: center;
         }
@@ -120,7 +121,7 @@
 }
 
 @media screen and (min-width: 53.125em) {
-    .nav-collapse ul li{
+    .nav-collapse ul li {
         .block, .non-block {
             float: none;
             width: 100%;

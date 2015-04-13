@@ -1,160 +1,157 @@
 /*Variables*/
 
-$primary: "azo-sans-web",sans-serif;
-$head: "phoreuscherokee",sans-serif;
-
+$primary: "azo-sans-web", sans-serif;
+$head: "phoreuscherokee", sans-serif;
 
 /*=====font families=====*/
 
 h1, h2, h3 {
-
-	font-family: $head;
+    font-family: $head;
 }
 
- h4, nav a, p, li, span, {
-
-	font-family: $primary;
+h4, nav a, p, li, span {
+    font-family: $primary;
 }
-
 
 /*=====font sizes=====*/
 
 h1 {
-	font-size: 3.25em;
+    font-size: 3.25em;
 }
 
 h2 {
-	font-size: 2.2em;
+    font-size: 2.2em;
 }
 
 h3 {
-	font-size: 2.25em;
+    font-size: 2.25em;
 }
 
 p {
-	font-size: 1.25em;
-	line-height: 1.5;
-	font-weight: 300;
+    font-size: 1.25em;
+    line-height: 1.5;
+    font-weight: 300;
 }
 
 * a {
-
-	text-decoration: none;
+    text-decoration: none;
 }
-
 
 footer {
-
     padding: 2em 1em;
-
     li {
-
-    margin-bottom: 1em;
-    font-weight: 300;
-
+        margin-bottom: 1em;
+        font-weight: 300;
     }
 }
+
 .day_nav, .food_nav {
-	font-size: 1.25em;
-	font-weight: 300;
+    font-size: 1.25em;
+    font-weight: 300;
 }
 
 /*=====Home Page=====*/
 
-
 .lg_logo h1 {
-	font-size: 3.5em;
-	padding: 1em;
-	line-height: 1.2;
+    font-size: 3.5em;
+    padding: 1em;
+    line-height: 1.2;
 }
 
 .fest_intro h2 {
-	padding-bottom: .75em;
-	font-weight: 700;
+    padding-bottom: .75em;
+    font-weight: 700;
 }
+
 .fest_intro p, .fest_intro h2 {
-	max-width: 600px;
+    max-width: 600px;
 }
+
 .partners {
-	h2, h3 {padding: .75em 0;}
-	h4 {font-size: 1.5em; padding-bottom: .5em;}
+    h2, h3 {
+        padding: .75em 0;
+    }
+    h4 {
+        font-size: 1.5em;
+        padding-bottom: .5em;
+    }
 }
 
-.primary_sponsors_col1,.primary_sponsors_col2, .secondary_sponsors_col1, .secondary_sponsors_col2 {
-	li {
-		padding-top: .5em;
-	}
+.primary_sponsors_col1, .primary_sponsors_col2, .secondary_sponsors_col1, .secondary_sponsors_col2 {
+    li {
+        padding-top: .5em;
+    }
 }
 
-.primary_sponsors_col1 li, .primary_sponsors_col2 li{
-
-	font-size: 1.2em;
+.primary_sponsors_col1 li, .primary_sponsors_col2 li {
+    font-size: 1.2em;
 }
+
+.cp_mama p {font-size: 1em; font-weight: normal}
+.secondary_sponsors_col1,.secondary_sponsors_col2 {font-size: 1em;}
 
 /*=====Music Page=====*/
 
 .headliner {
-
-	font-size: 1.5em;
-
+    font-size: 1.5em;
 }
 
 .stage_wrap p {
-	margin-bottom: 2em;
+    margin-bottom: 2em;
 }
 
 .stage_wrap span {
-	font-weight: 700;
-	line-height: 1.5;
+    font-weight: 700;
+    line-height: 1.5;
 }
 
 .stage_wrap h2 {
-	font-size: 2em;
+    font-size: 2em;
 }
 
 /*=====Food Page=====*/
 
 .vendor_wrap h2 {
-	padding-bottom: .75em;
+    padding-bottom: .75em;
 }
 
 .vendor_wrap p {
-	margin-top: 1em;
-}
-.vendor_wrap p, .vendor_wrap h1 {
-	max-width: 600px;
+    margin-top: 1em;
 }
 
-.icon_sm p{margin-top:0;}
+.vendor_wrap p, .vendor_wrap h1 {
+    max-width: 600px;
+}
+
+.icon_sm p {
+    margin-top: 0;
+}
 
 /*=====Events Page=====*/
 
 .event_wrap h2 {
-	padding-bottom: .75em;
+    padding-bottom: .75em;
 }
 
 .event_wrap h1, .event_wrap p, .sponsor_wrap h1 {
-	padding-bottom: 1em;
+    padding-bottom: 1em;
 }
 
 .gala {
-
-	h2{
-	padding: 1em 1em;
-}
-p {
-	padding-left: 2em;
-}
-
+    h2 {
+        padding: 1em 1em;
+    }
+    p {
+        padding-left: 2em;
+    }
 }
 
 /*=====Adopt Page=====*/
 
 .sponsor_wrap h3 {
-
-	padding-bottom: .75em;
+    padding-bottom: .75em;
 }
 
 .sponsor_wrap p, .sponsor_wrap h1 {
-	max-width: 600px;
+    max-width: 600px;
 }

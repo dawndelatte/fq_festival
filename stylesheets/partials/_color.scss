@@ -1,64 +1,56 @@
 /*Variables*/
 
-$logo_favicon: rgb(223, 233, 37);
-$red: rgb(199, 11, 15);
-$tealish: rgb(76, 155, 172);
-$yellowish: rgb(220, 226, 105);
+$logo_highlight: rgb(223, 233, 37);
+$primary_red: rgb(199, 11, 15);
+$primary_teal: rgb(76, 155, 172);
+$primary_yellow: rgb(220, 226, 105);
 $main_nav: rgb(75, 70, 72);
 
 $dk_text: rgb(75, 70, 72);
 $lt_text: #ffffff;
 
 #locations, #sched_date, #events_date {
-    background-color: $tealish;
+    background-color: $primary_teal;
 }
 
 .day_nav, .food_nav {
     background: $main_nav;
-
-a {color: $lt_text;}
-
-li {
-    border-right: 2px solid $logo_favicon;
-    @include transition (background 300ms linear);
-
-    &:last-of-type {
-        border-right: none;
+    a {
+        color: $lt_text;
     }
-
-    &:hover {
-    background: $tealish;
+    li {
+        border-right: 2px solid $logo_highlight;
+        @include transition(background 300ms linear);
+        &:last-of-type {
+            border-right: none;
+        }
+        &:hover {
+            background: $primary_teal;
+        }
     }
-}
-
 }
 
 footer {
-
     padding: 2em 1em;
-
     li {
-
-    margin-bottom: 1em;
-
-    a {
-        color: white;
-
-        &:visited {
+        margin-bottom: 1em;
+        a {
             color: white;
-        }
-        &:hover {
-            color: $logo_favicon;
-            @include transition (color 300ms linear);
-        }
-
-        svg:hover #twitter-4-icon, svg:hover #youtube-4-icon, svg:hover #facebook-circle-icon, svg:hover #instagram-circle-icon {
-            fill: $logo_favicon;
-            @include transition (fill 300ms linear);
-        }
+            &:visited {
+                color: white;
+            }
+            &:hover {
+                color: $logo_highlight;
+                @include transition(color 300ms linear);
+            }
+            svg:hover #twitter-4-icon, svg:hover #youtube-4-icon, svg:hover #facebook-circle-icon, svg:hover #instagram-circle-icon {
+                fill: $logo_highlight;
+                @include transition(fill 300ms linear);
+            }
         }
     }
 }
+
 .bottom_wrap {
     background: $main_nav;
 }
@@ -66,61 +58,79 @@ footer {
 .logo {
     color: $dk_text;
 }
+
 /*======Home Page ======*/
 
 .lg_logo {
     color: $lt_text;
-    background: $red;
+    background: $primary_red;
 }
 
 .fest_intro {
     color: $dk_text;
-    background-color: $yellowish;
+    background-color: $primary_yellow;
 }
 
 .partners {
     color: $lt_text;
-    background: $tealish;
+    background: $primary_teal;
 }
 
+.bottom_wrap {
+
+    h2 {
+        color: darken($primary_teal, 20%);
+        font-size: 2.75em;
+    }
+
+    h3 {
+
+    color: darken($primary_teal, 20%);
+}
+
+}
 .animation_mama a {
-    color:$dk_text;
-
-    &:visited {color:$dk_text;}
-    &:hover {color:$tealish;@include transition (color 300ms linear);}
-
+    color: $dk_text;
+    &:visited {
+        color: $dk_text;
+    }
+    &:hover {
+        color: $primary_teal;
+        @include transition(color 300ms linear);
+    }
 }
+
 /*======Music Page ======*/
 
 .stage_wrap:nth-of-type(3n+1) {
     .stage {
-        background: $red;
+        background: $primary_red;
         color: $lt_text;
     }
     .schedule {
-        background-color: $tealish;
+        background-color: $primary_teal;
         color: $lt_text;
     }
 }
 
 .stage_wrap:nth-of-type(3n+2) {
     .stage {
-        background: $yellowish;
+        background: $primary_yellow;
         color: $dk_text;
     }
     .schedule {
-        background: $red;
+        background: $primary_red;
         color: $lt_text;
     }
 }
 
 .stage_wrap:nth-of-type(3n+3) {
     .stage {
-        background: $tealish;
+        background: $primary_teal;
         color: $lt_text;
     }
     .schedule {
-        background: $yellowish;
+        background: $primary_yellow;
         color: $dk_text;
     }
 }
@@ -128,89 +138,89 @@ footer {
 /*======Food Page ======*/
 
 .vendor_wrap:nth-of-type(3n+1) {
-    background-color: $red;
+    background-color: $primary_red;
     color: $lt_text;
 }
 
 .vendor_wrap:nth-of-type(3n+2) {
-    background-color: $yellowish;
+    background-color: $primary_yellow;
     color: $dk_text;
 }
 
 .vendor_wrap:nth-of-type(3n+3) {
-    background-color: $tealish;
+    background-color: $primary_teal;
     color: $lt_text;
 }
 
 /*======Events Page ======*/
 
-
 // .event_wrap:nth-of-type(3n+1) {
-//     background: $red;
+//     background: $primary_red;
 //     color: $lt_text;
 // }
 
 // .event_wrap:nth-of-type(3n+2) {
-//     background: $yellowish;
+//     background: $primary_yellow;
 //     color: $dk_text;
 // }
 
 // .event_wrap:nth-of-type(3n+3) {
-//     background: $tealish;
+//     background: $primary_teal;
 //     color: $lt_text;
 // }
 
 .tealish {
-    background-color: $tealish;
+    background-color: $primary_teal;
     color: $lt_text;
 }
+
 .red {
-    background-color: $red;
+    background-color: $primary_red;
     color: $lt_text;
 }
+
 .yellowish {
-    background-color: $yellowish;
+    background-color: $primary_yellow;
     color: $dk_text;
 }
-.gala_info a{
-    color: $lt_text;
-    border-bottom: 2px solid $yellowish;
 
+.gala_info a {
+    color: $lt_text;
+    border-bottom: 2px solid $primary_yellow;
     &:hover {
-        border-bottom: 2px solid $yellowish;
+        border-bottom: 2px solid $primary_yellow;
     }
 }
+
 /*======Adopt Page ======*/
 
 .sponsor_wrap:nth-of-type(3n+1) {
-    background-color: $red;
+    background-color: $primary_red;
     color: $lt_text;
 }
 
 .sponsor_wrap:nth-of-type(3n+2) {
-    background-color: $yellowish;
+    background-color: $primary_yellow;
     color: $dk_text;
 }
 
 .sponsor_wrap:nth-of-type(3n+3) {
-    background-color: $tealish;
+    background-color: $primary_teal;
     color: $lt_text;
 }
 
-.intro a{
+.intro a {
     color: $lt_text;
-    border-bottom: 2px solid $tealish;
-
+    border-bottom: 2px solid $primary_teal;
     &:hover {
-        border-bottom: 2px solid $tealish;
+        border-bottom: 2px solid $primary_teal;
     }
 }
-.outro a{
+
+.outro a {
     color: $dk_text;
-    border-bottom: 2px solid $tealish;
-
+    border-bottom: 2px solid $primary_teal;
     &:hover {
-        border-bottom: 2px solid $tealish;
+        border-bottom: 2px solid $primary_teal;
     }
 }
-

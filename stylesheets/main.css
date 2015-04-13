@@ -109,7 +109,7 @@ footer {
 .sub_hero {
   background: url(../assets/sub_band.jpg);
   background-size: cover;
-  height: 300px;
+  height: 313px;
   display: none; }
 
 .hero {
@@ -228,8 +228,7 @@ footer {
 .gala_photo {
   background-image: url(../assets/gala.jpg);
   background-size: cover;
-  max-height: 300px;
-  height: 300px; }
+  height: 307px; }
 
 .gala_info, .events p {
   max-width: 600px; }
@@ -254,27 +253,27 @@ footer {
   .animation_mama img {
     padding-top: 1em; }
   .animation_mama .trombone_mama {
-    width: 120px;
+    width: 100px;
     height: 100px;
     position: relative; }
     .animation_mama .trombone_mama img {
       position: absolute; }
     .animation_mama .trombone_mama .animated_trombone {
-      width: 120px; }
+      width: 100px; }
     .animation_mama .trombone_mama .animated_trombone_handle {
-      width: 120px;
-      top: 35px;
-      left: 30px; }
+      width: 100px;
+      top: 29px;
+      left: 27px; }
   .animation_mama .animated_trombone_handle {
-    width: 120px;
+    width: 100px;
     position: absolute;
     top: 1512px;
     left: 73px; }
   .animation_mama .animated_streetcar {
-    width: 120px;
+    width: 100px;
     position: relative; }
   .animation_mama .animated_umbrella {
-    width: 120px;
+    width: 100px;
     position: relative; }
 
 /*Variables*/
@@ -306,7 +305,7 @@ footer {
 
   /*======Home Page ======*/
   .fest_intro, .partners {
-    padding: 4.6em; }
+    padding: 4.65em; }
 
   .sub_hero {
     display: block;
@@ -357,7 +356,7 @@ footer {
   .vendor_wrap {
     clear: both;
     overflow: hidden;
-    padding: 4.6em; }
+    padding: 4.65em; }
 
   .vendor_col1, .vendor_col2 {
     width: 45%;
@@ -369,7 +368,7 @@ footer {
 
   /*======Events Page ======*/
   .event_wrap {
-    padding: 4.6em; }
+    padding: 4.65em; }
 
   .gala {
     padding: 0; }
@@ -386,7 +385,7 @@ footer {
   .sponsor_wrap {
     overflow: hidden;
     clear: both;
-    padding: 4.6em; }
+    padding: 4.65em; }
 
   .sponsor_col1, .sponsor_col2 {
     width: 45%;
@@ -401,8 +400,10 @@ footer {
     width: 100%; }
     .animation_mama a {
       display: inline-block;
-      margin-right: 5%;
-      padding-bottom: 0; } }
+      margin-right: 10%;
+      padding-bottom: 0; }
+    .animation_mama a:last-of-type {
+      margin-right: 0; } }
 @media screen and (min-width: 53.125em) {
   header {
     float: left;
@@ -493,12 +494,9 @@ footer {
     clear: none; } }
 @media screen and (min-width: 1050px) {
   .stage, .schedule {
-    padding: 4.6em; }
+    padding: 4.65em; }
     .stage h2, .schedule h2 {
-      font-size: 2.2em; }
-
-  .animation_mama a {
-    margin-right: 10%; } }
+      font-size: 2.2em; } }
 /*Variables*/
 #locations, #sched_date, #events_date {
   background-color: #4c9bac; }
@@ -554,6 +552,12 @@ footer {
 .partners {
   color: #ffffff;
   background: #4c9bac; }
+
+.bottom_wrap h2 {
+  color: #2d5b65;
+  font-size: 2.75em; }
+.bottom_wrap h3 {
+  color: #2d5b65; }
 
 .animation_mama a {
   color: #4b4648; }
@@ -704,6 +708,13 @@ footer {
 
 .primary_sponsors_col1 li, .primary_sponsors_col2 li {
   font-size: 1.2em; }
+
+.cp_mama p {
+  font-size: 1em;
+  font-weight: normal; }
+
+.secondary_sponsors_col1, .secondary_sponsors_col2 {
+  font-size: 1em; }
 
 /*=====Music Page=====*/
 .headliner {
@@ -897,30 +908,30 @@ a:hover .animated_streetcar {
     transform: rotate(30deg); } }
 @-webkit-keyframes play {
   50% {
-    top: 39px;
-    left: 43px; } }
+    top: 33px;
+    left: 35px; } }
 @-moz-keyframes play {
   50% {
-    top: 39px;
-    left: 43px; } }
+    top: 33px;
+    left: 35px; } }
 @keyframes play {
   50% {
-    top: 39px;
-    left: 43px; } }
+    top: 33px;
+    left: 35px; } }
 @-webkit-keyframes slide {
   0%, 100% {
     left: 0; }
   50% {
-    left: -40px; } }
+    left: -25px; } }
 @-moz-keyframes slide {
   0%, 100% {
     left: 0; }
   50% {
-    left: -40px; } }
+    left: -25px; } }
 @keyframes slide {
   0%, 100% {
     left: 0; }
   50% {
-    left: -40px; } }
+    left: -25px; } }
 
 /*# sourceMappingURL=main.css.map */

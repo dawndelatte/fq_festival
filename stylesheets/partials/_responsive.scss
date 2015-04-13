@@ -1,19 +1,17 @@
 /*Variables*/
 
-$lg_pad: 4.6em;
+$lg_pad: 4.65em;
 
 @media screen and (min-width: 40em) {
-
     .small_logo {
         display: none;
     }
-    .large_logo{
+    .large_logo {
         display: block;
         width: 20%;
         float: left;
         padding-bottom: 3em;
     }
-
     .logo_date {
         float: left;
         margin-left: 2em;
@@ -28,9 +26,8 @@ $lg_pad: 4.6em;
     .social_nav {
         width: 50%;
     }
-
     .logo {
-    	float: none;
+        float: none;
     }
     /*======Home Page ======*/
     .fest_intro, .partners {
@@ -68,12 +65,9 @@ $lg_pad: 4.6em;
         clear: both;
         overflow: hidden;
     }
-
-     .primary_sponsors_col2 {
+    .primary_sponsors_col2 {
         margin-top: 2em;
-     }
-
-     
+    }
     /*======Music Page ======*/
     .stage, .map {
         width: 50%;
@@ -102,7 +96,6 @@ $lg_pad: 4.6em;
     .vendor_col2 {
         margin-right: 0;
     }
-
     /*======Events Page ======*/
     .event_wrap {
         padding: $lg_pad;
@@ -114,13 +107,10 @@ $lg_pad: 4.6em;
         width: 50%;
         float: left;
     }
-
     .gala_photo {
-
         width: 50%;
         float: left;
     }
-
     /*======Adopt Page ======*/
     .sponsor_wrap {
         overflow: hidden;
@@ -136,65 +126,56 @@ $lg_pad: 4.6em;
         margin-right: 0;
     }
 
- /*======Animations ======*/
+    /*======Animations ======*/
 
- .animation_mama {
-    width: 100%;
-    a {
-        display: inline-block;
-        margin-right: 5%;
-        padding-bottom: 0;
+    .animation_mama {
+        width: 100%;
+        a {
+            display: inline-block;
+            margin-right: 10%;
+            padding-bottom: 0;
+        }
+
+        a:last-of-type {margin-right:0;}
     }
- }
-
 }
+
 @media screen and (min-width: 53.125em) {
-
-
-	header {
+    header {
         float: left;
-        width: 222px;	
+        width: 222px;
     }
-    
     footer {
         width: 222px;
-        // float: left;
-
         .social_nav {
             float: none;
             margin: 0 auto;
             padding-left: 2em;
             padding-top: 4em;
-
             li {
                 float: none;
                 margin-bottom: 3em;
             }
         }
-
         .foot_nav {
             float: none;
             text-align: center;
             width: 100%;
-
             li {
                 display: block;
                 margin-bottom: 3em;
-
                 &:first-of-type {
                     padding-top: 2em;
                 }
             }
         }
     }
-
     .logo {
-    	float: none;
-    	text-align: center;
-    	margin: 0;
+        float: none;
+        text-align: center;
+        margin: 0;
     }
     /*======Home Page ======*/
-
     .large_logo {
         float: none;
         width: 80%;
@@ -205,28 +186,21 @@ $lg_pad: 4.6em;
         float: none;
         margin-left: 0;
     }
-
     .home_mama {
-    	float: right;
+        float: right;
         width: calc(100% - 222px);
         clear: none;
     }
-
     .sub_hero {
         height: 350px;
     }
-
     /*======Music Page ======*/
-
-
     .stage_wrap, .day_nav {
         float: right;
         width: calc(100% - 222px);
         clear: none;
     }
-
     /*======Food Page ======*/
-
     .vendor_wrap, .food_nav {
         float: right;
         width: calc(100% - 222px);
@@ -249,38 +223,24 @@ $lg_pad: 4.6em;
         width: 50%;
     }
     /*======Events Page ======*/
-
     .event_wrap {
         float: right;
         width: calc(100% - 222px);
         clear: none;
     }
-
-
     /*======Adopt Page ======*/
     .sponsor_wrap {
         float: right;
         width: calc(100% - 222px);
         clear: none;
     }
-
-
 }
 
-@media screen and (min-width: 1050px){
+@media screen and (min-width: 1050px) {
     .stage, .schedule {
         padding: $lg_pad;
-            h2 {
-                font-size: 2.2em;
-            }
+        h2 {
+            font-size: 2.2em;
+        }
     }
-        .animation_mama {
-    a {
-        margin-right: 10%;
-    }
- }
 }
-
-
-
-

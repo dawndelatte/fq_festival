@@ -82,7 +82,7 @@ footer {
 .sub_hero {
     background: url(../assets/sub_band.jpg);
     background-size: cover;
-    height: 300px;
+    height: 313px;
     display: none;
 }
 
@@ -97,37 +97,36 @@ footer {
 
 .chevron {
     overflow: hidden;
-
-img {
-    width: 40px;
-    float: left;
-    margin-right: 2em;
+    img {
+        width: 40px;
+        float: left;
+        margin-right: 2em;
+    }
+    h4 {
+        float: left;
+        padding-top: .25em;
+    }
 }
 
-h4 {
-    float: left;
-    padding-top: .25em;
-}
-
-}
-.capital_one  {
+.capital_one {
     overflow: hidden;
     float: left;
     margin-top: 2em;
-img {
-    width: 50px;
-    float: left;
-    margin-right: 1em;
-}
-h4 {
-    float: left;
-}
+    img {
+        width: 50px;
+        float: left;
+        margin-right: 1em;
+    }
+    h4 {
+        float: left;
+    }
 }
 
 .primary_sponsors_col1 {
     clear: both;
     margin-top: 2em;
 }
+
 /*======Music Page ======*/
 .stage_wrap:nth-of-type(3n+1) {
     .schedule {
@@ -229,8 +228,7 @@ h4 {
 .gala_photo {
     background-image: url(../assets/gala.jpg);
     background-size: cover;
-    max-height: 300px;
-    height: 300px;
+    height: 307px;
 }
 
 .gala_info, .events p {
@@ -256,48 +254,41 @@ h4 {
     width: 50%;
     margin: 0 auto;
     padding-top: 3em;
-
     a {
         display: block;
         padding-bottom: 4em;
     }
-
     img {
         padding-top: 1em;
     }
-
-.trombone_mama {
-  width: 120px;
-  height: 100px;
-  position: relative;
-
-  img {
-    position:absolute;
-    }
-    .animated_trombone {
-        width: 120px;
+    .trombone_mama {
+        width: 100px;
+        height: 100px;
+        position: relative;
+        img {
+            position: absolute;
+        }
+        .animated_trombone {
+            width: 100px;
+        }
+        .animated_trombone_handle {
+            width: 100px;
+            top: 29px;
+            left: 27px;
+        }
     }
     .animated_trombone_handle {
-        width: 120px;
-        top: 35px;
-        left: 30px;
+        width: 100px;
+        position: absolute;
+        top: 1512px;
+        left: 73px;
     }
-}
-
-.animated_trombone_handle {
-    width: 120px;
-    position: absolute;
-    top: 1512px;
-    left: 73px;
-}
-
-.animated_streetcar {
-    width: 120px;
-    position: relative;
-}
-
-.animated_umbrella {
-    width: 120px;
-    position: relative;
-}
+    .animated_streetcar {
+        width: 100px;
+        position: relative;
+    }
+    .animated_umbrella {
+        width: 100px;
+        position: relative;
+    }
 }

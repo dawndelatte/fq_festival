@@ -1,34 +1,45 @@
 // @media screen and (min-width: 53.125em) {
 /*=====Animation=====*/
 a:hover .animated_umbrella {
-	@include animation (wiggle 1s ease infinite);
+    @include animation(wiggle 1s ease infinite);
 }
 
 a:hover .animated_trombone_handle {
-	@include animation (play 2s infinite);
+    @include animation(play 2s infinite);
 }
 
 a:hover .animated_streetcar {
-	@include animation (slide 2s ease infinite)
+    @include animation(slide 2s ease infinite);
 }
-
 
 /*=====Key Frames=====*/
 
-@include keyframes (wiggle) {
-    0%, 100% {transform: rotate(0deg);}
-    50% {transform: rotate(30deg);}
-
+@include keyframes(wiggle) {
+    0%, 100% {
+        transform: rotate(0deg);
+    }
+    50% {
+        transform: rotate(30deg);
+    }
 }
 
 
-@include keyframes (play) {
-
-	50% {top:39px; left: 43px;}
+@include keyframes(play) {
+    50% {
+        top: 33px;
+        left: 35px;
+    }
 }
 
-@include keyframes (slide) {
-	0%, 100% {left: 0;}
-    50% {left: -40px;} 
+
+@include keyframes(slide) {
+    0%, 100% {
+        left: 0;
+    }
+    50% {
+        left: -25px;
+    }
 }
+
+
 // }
