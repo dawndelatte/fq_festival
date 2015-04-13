@@ -400,7 +400,7 @@ footer {
     width: 100%; }
     .animation_mama a {
       display: inline-block;
-      margin-right: 10%;
+      margin-right: 7%;
       padding-bottom: 0; }
     .animation_mama a:last-of-type {
       margin-right: 0; } }
@@ -718,6 +718,10 @@ footer {
 
 .secondary_sponsors_col1, .secondary_sponsors_col2 {
   font-size: 1em; }
+
+.animation_mama span {
+  font-family: "phoreuscherokee", sans-serif;
+  font-size: 1.1em; }
 
 /*=====Music Page=====*/
 .headliner {
