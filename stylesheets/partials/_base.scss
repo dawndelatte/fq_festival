@@ -87,12 +87,14 @@ footer {
 }
 
 .hero {
-    max-height: 550px;
+    background-image: url(../assets/march.jpg);
+    background-size: cover;
+    min-height: 550px;
     overflow: hidden;
 }
 
 .cp_mama {
-    max-width: 725px;
+    max-width: 650px;
 }
 
 .chevron {
@@ -232,13 +234,16 @@ footer {
 }
 
 .gala_info, .events p {
-    max-width: 600px;
+    max-width: 700px;
 }
 
 /*======Adopt Page ======*/
 
 .sponsor_wrap {
     padding: $sm_pad;
+
+    ul {max-width: 700px;}
+    p {max-width: 700px;}
 }
 
 .sponsor_col1, .sponsor_col2 {

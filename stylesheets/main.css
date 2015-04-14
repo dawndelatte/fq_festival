@@ -113,11 +113,13 @@ footer {
   display: none; }
 
 .hero {
-  max-height: 550px;
+  background-image: url(../assets/march.jpg);
+  background-size: cover;
+  min-height: 550px;
   overflow: hidden; }
 
 .cp_mama {
-  max-width: 725px; }
+  max-width: 650px; }
 
 .chevron {
   overflow: hidden; }
@@ -231,11 +233,15 @@ footer {
   height: 307px; }
 
 .gala_info, .events p {
-  max-width: 600px; }
+  max-width: 700px; }
 
 /*======Adopt Page ======*/
 .sponsor_wrap {
   padding: 3em; }
+  .sponsor_wrap ul {
+    max-width: 700px; }
+  .sponsor_wrap p {
+    max-width: 700px; }
 
 .sponsor_col1, .sponsor_col2 {
   margin-bottom: 3.5em; }
@@ -497,9 +503,45 @@ footer {
     padding: 4.65em; }
     .stage h2, .schedule h2 {
       font-size: 2.2em; } }
-@media screen and (min-width: 75em) {
-  .fest_intro, .partners, .event_wrap, .sponsor_wrap {
-    padding-left: 10em; } }
+@media screen and (min-width: 87.5em) {
+  .fest_intro, .partners, .event_wrap, .vendor_wrap, .sponsor_wrap {
+    padding-left: 10em; }
+
+  .schedule {
+    padding-left: 10em;
+    padding-right: 16em; }
+
+  .stage h2 {
+    padding-left: 2.8em;
+    padding-right: 1em; }
+
+  .lg_logo {
+    padding-left: 2.3em; }
+
+  .day_nav a, .food_nav a {
+    font-size: 1.5em; }
+
+  .beverages {
+    width: 45%; }
+
+  .icon_key {
+    margin-left: 10%; }
+
+  .vendor_col1 {
+    margin-right: 0; }
+
+  .gala h2, .gala p {
+    padding-left: 0; }
+
+  .gala_photo {
+    height: 321px; } }
+@media screen and (min-width: 112.5em) {
+  .primary_sponsors_col1, .primary_sponsors_col2, .secondary_sponsors_col1, .secondary_sponsors_col2 {
+    width: 20%;
+    margin-right: 5%; }
+
+  .secondary_sponsors_col1, .secondary_sponsors_col2 {
+    margin-top: 2em; } }
 /*Variables*/
 #locations, #sched_date, #events_date {
   background-color: #4c9bac; }
@@ -718,12 +760,12 @@ footer {
   padding-bottom: .75em;
   font-weight: 700;
   font-size: 2.5em;
-  max-width: 600px; }
+  max-width: 700px; }
 .fest_intro h3 {
   font-size: 2em;
   margin-bottom: 1em; }
 .fest_intro p {
-  max-width: 600px; }
+  max-width: 700px; }
 
 .partners h2, .partners h3 {
   padding: .75em 0; }
@@ -771,7 +813,7 @@ footer {
   margin-top: 1em; }
 
 .vendor_wrap p, .vendor_wrap h1 {
-  max-width: 600px; }
+  max-width: 700px; }
 
 .icon_sm p {
   margin-top: 0; }
@@ -811,7 +853,7 @@ footer {
   padding-bottom: .75em; }
 
 .sponsor_wrap p, .sponsor_wrap h1 {
-  max-width: 600px; }
+  max-width: 700px; }
 
 .sponsor_wrap li {
   font-size: 1.25em;

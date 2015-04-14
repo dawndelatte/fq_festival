@@ -246,11 +246,36 @@ $xl_pad: 10em;
     }
 }
 
-@media screen and (min-width: 75em) {
-    .fest_intro, .partners, .event_wrap, .sponsor_wrap {
+@media screen and (min-width: 87.5em) {
+
+.fest_intro, .partners, .event_wrap, .vendor_wrap, .sponsor_wrap {
         padding-left: $xl_pad;
     }
 
+    .schedule {padding-left: $xl_pad; padding-right: 16em;}
+
+    .stage h2 {padding-left: 2.8em; padding-right: 1em;}
+
+    .lg_logo{padding-left: 2.3em;}
+
+    .day_nav a, .food_nav a {font-size: 1.5em;}
+
+    .beverages {width: 45%;}
+    .icon_key  {margin-left: 10%;}
+    .vendor_col1 {margin-right: 0;}
+    .gala h2, .gala p {padding-left: 0;}
+    .gala_photo {height: 321px;}
+}
+
+@media screen and (min-width: 112.5em) {
+
+    .primary_sponsors_col1, .primary_sponsors_col2, .secondary_sponsors_col1, .secondary_sponsors_col2 {
+        width: 20%;
+        margin-right: 5%;
+    }
+    .secondary_sponsors_col1, .secondary_sponsors_col2 {
+        margin-top: 2em;
+    }
 } 
 
 
