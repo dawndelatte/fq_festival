@@ -48,241 +48,6 @@ table {
 /* Mixin */
 /*Variables*/
 /*Variables*/
-body * {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box; }
-body img {
-  max-width: 100%;
-  display: block; }
-body iframe {
-  display: block; }
-
-header {
-  overflow: hidden;
-  margin-top: 3em; }
-
-.logo {
-  float: left;
-  margin-left: 1em; }
-
-footer {
-  overflow: hidden; }
-  footer .foot_nav {
-    float: right;
-    width: 30%; }
-  footer .social_nav {
-    overflow: hidden;
-    float: left;
-    width: 50%; }
-    footer .social_nav li {
-      width: 50px;
-      height: 50px;
-      float: left;
-      margin-right: 2%; }
-      footer .social_nav li:last-of-type {
-        margin-right: 0; }
-
-.top_wrap, .bottom_wrap {
-  overflow: hidden; }
-
-/*======Home Page ======*/
-.large_logo {
-  display: none; }
-
-.small_logo {
-  width: 60%;
-  padding-bottom: 15px; }
-
-.logo {
-  padding-bottom: 2em; }
-
-.fest_intro, .partners {
-  padding: 3em;
-  overflow: hidden; }
-
-.fest_intro, .trombone {
-  background-image: url(../assets/trombone_lg.svg);
-  background-size: 150%;
-  background-repeat: no-repeat; }
-
-.sub_hero {
-  background: url(../assets/sub_band.jpg);
-  background-size: cover;
-  height: 313px;
-  display: none; }
-
-.hero {
-  background-image: url(../assets/march.jpg);
-  background-size: cover;
-  min-height: 550px;
-  overflow: hidden; }
-
-.cp_mama {
-  max-width: 650px; }
-
-.chevron {
-  overflow: hidden; }
-  .chevron img {
-    width: 40px;
-    float: left;
-    margin-right: 2em; }
-  .chevron h4 {
-    float: left;
-    padding-top: .25em; }
-
-.capital_one {
-  overflow: hidden;
-  float: left;
-  margin-top: 2em; }
-  .capital_one img {
-    width: 50px;
-    float: left;
-    margin-right: 1em; }
-  .capital_one h4 {
-    float: left; }
-
-.primary_sponsors_col1 {
-  clear: both;
-  margin-top: 2em; }
-
-/*======Music Page ======*/
-.stage_wrap:nth-of-type(3n+1) .schedule {
-  background-image: url(../assets/streetcar_lg.svg);
-  background-size: 110%;
-  background-repeat: no-repeat;
-  background-position: center; }
-
-.stage {
-  height: 200px; }
-
-.stage, .schedule {
-  padding: 3em; }
-
-.day_nav {
-  text-align: center; }
-  .day_nav::after {
-    clear: both;
-    content: "";
-    display: table; }
-  .day_nav li {
-    display: inline-block;
-    width: 25%;
-    padding: 1.5em; }
-    .day_nav li:active {
-      background: red; }
-
-.food_nav {
-  text-align: center; }
-  .food_nav::after {
-    clear: both;
-    content: "";
-    display: table; }
-  .food_nav li {
-    display: inline-block;
-    width: 50%;
-    padding: 1.5em; }
-
-/*======Food Page ======*/
-.vendor_wrap {
-  padding: 3em; }
-
-.beverages {
-  margin-top: 1.5em; }
-
-.icon_key {
-  overflow: hidden;
-  margin-top: 2em; }
-
-.veg, .gf {
-  float: left;
-  width: 100px;
-  text-align: center; }
-
-.veg {
-  margin-right: 20%; }
-
-.icon_sm {
-  padding-top: 1em; }
-  .icon_sm p {
-    display: inline-block;
-    margin-right: 1em;
-    vertical-align: top; }
-  .icon_sm img {
-    display: inline-block;
-    width: 30px;
-    margin-right: 5px; }
-
-/*======Events Page ======*/
-.umbrella {
-  background-image: url(../assets/umbrella_lg.svg);
-  background-size: 85%;
-  background-repeat: no-repeat;
-  background-position: center top; }
-
-.event_wrap {
-  padding: 3em;
-  overflow: hidden; }
-
-.gala {
-  padding: 0; }
-
-.gala_photo {
-  background-image: url(../assets/gala.jpg);
-  background-size: cover;
-  height: 331px; }
-
-.gala_info, .events p {
-  max-width: 700px; }
-
-/*======Adopt Page ======*/
-.sponsor_wrap {
-  padding: 3em; }
-  .sponsor_wrap ul {
-    max-width: 700px; }
-  .sponsor_wrap p {
-    max-width: 700px; }
-
-.sponsor_col1, .sponsor_col2 {
-  margin-bottom: 3.5em; }
-  .sponsor_col1:last-of-type, .sponsor_col2:last-of-type {
-    margin-bottom: 0; }
-
-/*======Animations ======*/
-.animation_mama {
-  width: 50%;
-  margin: 0 auto;
-  padding-top: 3em; }
-  .animation_mama a {
-    display: block;
-    padding-bottom: 4em; }
-  .animation_mama img {
-    padding-top: 1em; }
-  .animation_mama .trombone_mama {
-    width: 100px;
-    height: 100px;
-    position: relative; }
-    .animation_mama .trombone_mama img {
-      position: absolute; }
-    .animation_mama .trombone_mama .animated_trombone {
-      width: 100px; }
-    .animation_mama .trombone_mama .animated_trombone_handle {
-      width: 100px;
-      top: 29px;
-      left: 27px; }
-  .animation_mama .animated_trombone_handle {
-    width: 100px;
-    position: absolute;
-    top: 1512px;
-    left: 73px; }
-  .animation_mama .animated_streetcar {
-    width: 100px;
-    position: relative; }
-  .animation_mama .animated_umbrella {
-    width: 100px;
-    position: relative; }
-
-/*Variables*/
 #locations, #sched_date, #events_date {
   background-color: #4c9bac; }
 
@@ -541,7 +306,8 @@ footer {
   margin-bottom: 2em; }
 
 .stage_wrap h2 {
-  font-size: 2em; }
+  font-size: 2em;
+  line-height: 1.25; }
 
 /*=====Food Page=====*/
 .vendor_wrap h2 {
@@ -567,9 +333,9 @@ footer {
   padding-bottom: 1em; }
 
 .gala h2 {
-  padding: 1em 1em; }
+  padding: 1em 2em; }
 .gala p {
-  padding-left: 2em; }
+  padding-left: 3.7em; }
 
 .event_wrap span {
   display: block;
@@ -712,6 +478,242 @@ footer {
 
   .nav-collapse li a {
     padding: 1.5em 1em; } }
+/*Variables*/
+body * {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+body img {
+  max-width: 100%;
+  display: block; }
+body iframe {
+  display: block; }
+
+header {
+  overflow: hidden;
+  margin-top: 3em; }
+
+.logo {
+  float: left;
+  margin-left: 1em; }
+
+footer {
+  overflow: hidden; }
+  footer .foot_nav {
+    float: right;
+    width: 30%; }
+  footer .social_nav {
+    overflow: hidden;
+    float: left;
+    width: 50%; }
+    footer .social_nav li {
+      width: 50px;
+      height: 50px;
+      float: left;
+      margin-right: 2%; }
+      footer .social_nav li:last-of-type {
+        margin-right: 0; }
+
+.top_wrap, .bottom_wrap {
+  overflow: hidden; }
+
+/*======Home Page ======*/
+.large_logo {
+  display: none; }
+
+.small_logo {
+  width: 60%;
+  padding-bottom: 15px; }
+
+.logo {
+  padding-bottom: 2em; }
+
+.fest_intro, .partners {
+  padding: 3em;
+  overflow: hidden; }
+
+.fest_intro, .trombone {
+  background-image: url(../assets/trombone_lg.svg);
+  background-size: 150%;
+  background-repeat: no-repeat; }
+
+.sub_hero {
+  background: url(../assets/sub_band.jpg);
+  background-size: cover;
+  height: 313px;
+  display: none; }
+
+.hero {
+  background-image: url(../assets/march.jpg);
+  background-size: cover;
+  min-height: 550px;
+  overflow: hidden; }
+
+.cp_mama {
+  max-width: 650px; }
+
+.chevron {
+  overflow: hidden; }
+  .chevron img {
+    width: 40px;
+    float: left;
+    margin-right: 2em; }
+  .chevron h4 {
+    float: left;
+    padding-top: .25em; }
+
+.capital_one {
+  overflow: hidden;
+  float: left;
+  margin-top: 2em; }
+  .capital_one img {
+    width: 50px;
+    float: left;
+    margin-right: 1em; }
+  .capital_one h4 {
+    float: left; }
+
+.primary_sponsors_col1 {
+  clear: both;
+  margin-top: 2em; }
+
+/*======Music Page ======*/
+.stage_wrap:nth-of-type(3n+1) .schedule {
+  background-image: url(../assets/streetcar_lg.svg);
+  background-size: 110%;
+  background-repeat: no-repeat;
+  background-position: center; }
+
+.stage {
+  height: 200px;
+  padding: 2.5em; }
+
+.schedule {
+  padding: 3em; }
+
+.day_nav {
+  text-align: center; }
+  .day_nav::after {
+    clear: both;
+    content: "";
+    display: table; }
+  .day_nav li {
+    display: inline-block;
+    width: 25%;
+    padding: 1.5em; }
+    .day_nav li:active {
+      background: red; }
+
+.food_nav {
+  text-align: center; }
+  .food_nav::after {
+    clear: both;
+    content: "";
+    display: table; }
+  .food_nav li {
+    display: inline-block;
+    width: 50%;
+    padding: 1.5em; }
+
+/*======Food Page ======*/
+.vendor_wrap {
+  padding: 3em; }
+
+.beverages {
+  margin-top: 1.5em; }
+
+.icon_key {
+  overflow: hidden;
+  margin-top: 2em; }
+
+.veg, .gf {
+  float: left;
+  width: 100px;
+  text-align: center; }
+
+.veg {
+  margin-right: 20%; }
+
+.icon_sm {
+  padding-top: 1em; }
+  .icon_sm p {
+    display: inline-block;
+    margin-right: 1em;
+    vertical-align: top; }
+  .icon_sm img {
+    display: inline-block;
+    width: 30px;
+    margin-right: 5px; }
+
+/*======Events Page ======*/
+.umbrella {
+  background-image: url(../assets/umbrella_lg.svg);
+  background-size: 85%;
+  background-repeat: no-repeat;
+  background-position: center top; }
+
+.event_wrap {
+  padding: 3em;
+  overflow: hidden; }
+
+.gala {
+  padding: 0; }
+
+.gala_photo {
+  background-image: url(../assets/gala.jpg);
+  background-size: cover;
+  height: 331px; }
+
+.gala_info, .events p {
+  max-width: 700px; }
+
+/*======Adopt Page ======*/
+.sponsor_wrap {
+  padding: 3em; }
+  .sponsor_wrap ul {
+    max-width: 700px; }
+  .sponsor_wrap p {
+    max-width: 700px; }
+
+.sponsor_col1, .sponsor_col2 {
+  margin-bottom: 3.5em; }
+  .sponsor_col1:last-of-type, .sponsor_col2:last-of-type {
+    margin-bottom: 0; }
+
+/*======Animations ======*/
+.animation_mama {
+  width: 50%;
+  margin: 0 auto;
+  padding-top: 3em; }
+  .animation_mama a {
+    display: block;
+    padding-bottom: 4em; }
+  .animation_mama img {
+    padding-top: 1em; }
+  .animation_mama .trombone_mama {
+    width: 100px;
+    height: 100px;
+    position: relative; }
+    .animation_mama .trombone_mama img {
+      position: absolute; }
+    .animation_mama .trombone_mama .animated_trombone {
+      width: 100px; }
+    .animation_mama .trombone_mama .animated_trombone_handle {
+      width: 100px;
+      top: 29px;
+      left: 27px; }
+  .animation_mama .animated_trombone_handle {
+    width: 100px;
+    position: absolute;
+    top: 1512px;
+    left: 73px; }
+  .animation_mama .animated_streetcar {
+    width: 100px;
+    position: relative; }
+  .animation_mama .animated_umbrella {
+    width: 100px;
+    position: relative; }
+
 /*=====Animation=====*/
 a:hover .animated_umbrella {
   -webkit-animation: wiggle 1s ease infinite;
@@ -984,12 +986,16 @@ a:hover .animated_streetcar {
     width: calc(100% - 222px);
     clear: none; } }
 @media screen and (min-width: 65.625em) {
-  .stage, .schedule {
+  .schedule {
     padding: 4.65em; }
-    .stage h2, .schedule h2 {
-      font-size: 2.2em; } }
+
+  .stage {
+    padding: 3em 4.65em; } }
 @media screen and (min-width: 87.5em) {
   /*1400px*/
+  .stage h2 {
+    font-size: 2.25em; }
+
   .fest_intro, .partners, .event_wrap, .vendor_wrap, .sponsor_wrap {
     padding-left: 10em; }
 
@@ -1001,7 +1007,7 @@ a:hover .animated_streetcar {
     padding-right: 18em; }
 
   .stage h2 {
-    padding-left: 2.8em;
+    padding-left: 2.5em;
     padding-right: 1em; }
 
   .lg_logo h1 {
@@ -1021,7 +1027,7 @@ a:hover .animated_streetcar {
 
   .gala h2, .gala p {
     padding-left: 0;
-    padding-top: 1.5em; }
+    padding-top: 2em; }
 
   .gala_photo {
     height: 393px; }

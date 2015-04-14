@@ -141,9 +141,10 @@ footer {
 
 .stage {
     height: 200px;
+    padding: 2.5em;
 }
 
-.stage, .schedule {
+.schedule {
     padding: $sm_pad;
 }
 

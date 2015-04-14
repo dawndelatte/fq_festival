@@ -233,15 +233,15 @@ $xl_pad: 10em;
 }
 
 @media screen and (min-width: 65.625em) {
-    .stage, .schedule {
+    .schedule {
         padding: $lg_pad;
-        h2 {
-            font-size: 2.2em;
-        }
     }
+    .stage {padding: 3em $lg_pad;}
 }
 
 @media screen and (min-width: 87.5em) {  /*1400px*/ 
+
+    .stage h2 {font-size: 2.25em;}
 
 .fest_intro, .partners, .event_wrap, .vendor_wrap, .sponsor_wrap {padding-left: $xl_pad;}
 
@@ -249,7 +249,7 @@ $xl_pad: 10em;
 
     .schedule {padding-left: $xl_pad; padding-right: 18em;}
 
-    .stage h2 {padding-left: 2.8em; padding-right: 1em;}
+    .stage h2 {padding-left: 2.5em; padding-right: 1em;}
 
     .lg_logo h1 {padding-left: 3em;}
 
@@ -261,7 +261,7 @@ $xl_pad: 10em;
 
     .vendor_col1 {margin-right: 0;}
 
-    .gala h2, .gala p {padding-left: 0; padding-top: 1.5em;}
+    .gala h2, .gala p {padding-left: 0; padding-top: 2em;}
 
     .gala_photo {height: 393px;}
 
