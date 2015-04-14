@@ -791,7 +791,8 @@ footer {
 .event_wrap span {
   display: block;
   margin-bottom: .5em;
-  font-size: 1.25em; }
+  font-size: 1.25em;
+  font-weight: 600; }
 
 .gala_info .headliner {
   font-size: 1.5em;
