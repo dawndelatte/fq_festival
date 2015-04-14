@@ -1,6 +1,7 @@
 /*Variables*/
 
 $lg_pad: 4.65em;
+$xl_pad: 10em;
 
 @media screen and (min-width: 40em) {
     .small_logo {
@@ -236,7 +237,7 @@ $lg_pad: 4.65em;
     }
 }
 
-@media screen and (min-width: 1050px) {
+@media screen and (min-width: 65.625em) {
     .stage, .schedule {
         padding: $lg_pad;
         h2 {
@@ -244,3 +245,15 @@ $lg_pad: 4.65em;
         }
     }
 }
+
+@media screen and (min-width: 75em) {
+    .fest_intro, .partners, .event_wrap, .sponsor_wrap {
+        padding-left: $xl_pad;
+    }
+
+} 
+
+
+
+
+
