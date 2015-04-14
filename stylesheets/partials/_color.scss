@@ -137,17 +137,27 @@ footer {
 .vendor_wrap:nth-of-type(3n+1) {
     background-color: $primary_red;
     color: $lt_text;
+    span {
+    color: darken($primary_red, 20%);
+}
 }
 
 .vendor_wrap:nth-of-type(3n+2) {
     background-color: $primary_yellow;
     color: $dk_text;
+    span {
+    color: darken($primary_yellow, 25%);
+}
 }
 
 .vendor_wrap:nth-of-type(3n+3) {
     background-color: $primary_teal;
     color: $lt_text;
+    span {
+    color: darken($primary_teal, 20%);
 }
+}
+
 
 /*======Events Page ======*/
 
@@ -169,16 +179,20 @@ footer {
 .tealish {
     background-color: $primary_teal;
     color: $lt_text;
+
+    span {color: darken($primary_teal, 20%);}
 }
 
 .red {
     background-color: $primary_red;
     color: $lt_text;
+    span {color: darken($primary_red, 20%);}
 }
 
 .yellowish {
     background-color: $primary_yellow;
     color: $dk_text;
+    span {color: darken($primary_yellow, 20%);}
 }
 
 .gala_info a {
@@ -189,6 +203,15 @@ footer {
     }
 }
 
+.gala_info h3 {color: darken($primary_teal, 20%); padding-bottom: 1em;}
+
+.gala_title a {
+    color: $dk_text;
+    border-bottom: 2px solid $primary_teal;
+    &:hover {
+        border-bottom: 2px solid $primary_teal;
+    }
+}
 /*======Adopt Page ======*/
 
 .sponsor_wrap:nth-of-type(3n+1) {

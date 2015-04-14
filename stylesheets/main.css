@@ -594,33 +594,55 @@ footer {
 .vendor_wrap:nth-of-type(3n+1) {
   background-color: #c70b0f;
   color: #ffffff; }
+  .vendor_wrap:nth-of-type(3n+1) span {
+    color: #660608; }
 
 .vendor_wrap:nth-of-type(3n+2) {
   background-color: #dce269;
   color: #4b4648; }
+  .vendor_wrap:nth-of-type(3n+2) span {
+    color: #a4ab21; }
 
 .vendor_wrap:nth-of-type(3n+3) {
   background-color: #4c9bac;
   color: #ffffff; }
+  .vendor_wrap:nth-of-type(3n+3) span {
+    color: #2d5b65; }
 
 /*======Events Page ======*/
 .tealish {
   background-color: #4c9bac;
   color: #ffffff; }
+  .tealish span {
+    color: #2d5b65; }
 
 .red {
   background-color: #c70b0f;
   color: #ffffff; }
+  .red span {
+    color: #660608; }
 
 .yellowish {
   background-color: #dce269;
   color: #4b4648; }
+  .yellowish span {
+    color: #b8c025; }
 
 .gala_info a {
   color: #ffffff;
   border-bottom: 2px solid #dce269; }
   .gala_info a:hover {
     border-bottom: 2px solid #dce269; }
+
+.gala_info h3 {
+  color: #2d5b65;
+  padding-bottom: 1em; }
+
+.gala_title a {
+  color: #4b4648;
+  border-bottom: 2px solid #4c9bac; }
+  .gala_title a:hover {
+    border-bottom: 2px solid #4c9bac; }
 
 /*======Adopt Page ======*/
 .sponsor_wrap:nth-of-type(3n+1) {
@@ -724,15 +746,16 @@ footer {
   font-size: 1.1em; }
 
 /*=====Music Page=====*/
-.headliner {
-  font-size: 1.5em; }
+.stage_wrap span {
+  font-weight: 600;
+  line-height: 1.5;
+  font-size: 1.25em; }
+
+.schedule .headliner {
+  font-size: 1.6em; }
 
 .stage_wrap p {
   margin-bottom: 2em; }
-
-.stage_wrap span {
-  font-weight: 700;
-  line-height: 1.5; }
 
 .stage_wrap h2 {
   font-size: 2em; }
@@ -754,7 +777,10 @@ footer {
 .event_wrap h2 {
   padding-bottom: .75em; }
 
-.event_wrap h1, .event_wrap p, .sponsor_wrap h1 {
+.event_wrap h1, .sponsor_wrap h1 {
+  padding-bottom: 1em; }
+
+.event_wrap p {
   padding-bottom: 1em; }
 
 .gala h2 {
@@ -762,12 +788,33 @@ footer {
 .gala p {
   padding-left: 2em; }
 
+.event_wrap span {
+  display: block;
+  margin-bottom: .5em;
+  font-size: 1.25em; }
+
+.gala_info .headliner {
+  font-size: 1.5em;
+  padding-bottom: 2.5em; }
+
+.events p {
+  padding-bottom: 2.5em; }
+  .events p:last-of-type {
+    padding-bottom: 0; }
+
 /*=====Adopt Page=====*/
 .sponsor_wrap h3 {
   padding-bottom: .75em; }
 
 .sponsor_wrap p, .sponsor_wrap h1 {
   max-width: 600px; }
+
+.sponsor_wrap li {
+  font-size: 1.25em;
+  line-height: 1.5;
+  font-weight: 300;
+  list-style: disc;
+  padding-bottom: .5em; }
 
 /*! responsive-nav.js 1.0.38 by @viljamis */
 .nav-collapse a {
