@@ -3,7 +3,7 @@
 $lg_pad: 4.65em;
 $xl_pad: 10em;
 
-@media screen and (min-width: 40em) {
+@media screen and (min-width: 40em) { /*640px*/
     .small_logo {
         display: none;
     }
@@ -18,15 +18,7 @@ $xl_pad: 10em;
         margin-left: 2em;
         margin-top: 3em;
     }
-    .foot_nav {
-        width: 50%;
-        li {
-            display: inline-block;
-        }
-    }
-    .social_nav {
-        width: 50%;
-    }
+
     .logo {
         float: none;
     }
@@ -141,7 +133,7 @@ $xl_pad: 10em;
     }
 }
 
-@media screen and (min-width: 53.125em) {
+@media screen and (min-width: 53.125em) { /*850px*/
     header {
         float: left;
         width: 222px;
@@ -151,8 +143,11 @@ $xl_pad: 10em;
         .social_nav {
             float: none;
             margin: 0 auto;
-            padding-left: 2em;
             padding-top: 4em;
+            ul {
+                max-width: 50px;
+                margin: 0 auto;
+            }
             li {
                 float: none;
                 margin-bottom: 3em;
@@ -248,24 +243,32 @@ $xl_pad: 10em;
 
 @media screen and (min-width: 87.5em) {  /*1400px*/ 
 
-.fest_intro, .partners, .event_wrap, .vendor_wrap, .sponsor_wrap {
-        padding-left: $xl_pad;
-    }
+.fest_intro, .partners, .event_wrap, .vendor_wrap, .sponsor_wrap {padding-left: $xl_pad;}
+
     .hero {background-position: center;}
+
     .schedule {padding-left: $xl_pad; padding-right: 18em;}
 
     .stage h2 {padding-left: 2.8em; padding-right: 1em;}
 
-    .lg_logo h1 {padding-left: 2.4em; padding-top: 2em; font-size: 4.5em;}
+    .lg_logo h1 {padding-left: 3em;}
 
-    .day_nav a, .food_nav a {font-size: 1.5em;}
     .day_nav li, .food_nav li {padding: 1.5em;}
 
     .beverages {width: 45%;}
+
     .icon_key  {margin-left: 10%;}
+
     .vendor_col1 {margin-right: 0;}
-    .gala h2, .gala p {padding-left: 0;}
-    .gala_photo {height: 321px;}
+
+    .gala h2, .gala p {padding-left: 0; padding-top: 1.5em;}
+
+    .gala_photo {height: 393px;}
+
+    header, footer {width: 300px;}
+    .home_mama, .stage_wrap, .vendor_wrap, .event_wrap, .sponsor_wrap, .day_nav, .food_nav {
+        width: calc(100% - 300px);
+    }
 }
 
 @media screen and (min-width: 112.5em) { /*1800px*/ 
