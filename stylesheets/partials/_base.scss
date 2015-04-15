@@ -242,9 +242,12 @@ footer {
 
 .sponsor_wrap {
     padding: $sm_pad;
-
-    ul {max-width: 700px;}
-    p {max-width: 700px;}
+    ul {
+        max-width: 700px;
+    }
+    p {
+        max-width: 700px;
+    }
 }
 
 .sponsor_col1, .sponsor_col2 {

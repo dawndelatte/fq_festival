@@ -39,7 +39,6 @@ p {
 
 footer {
     padding: 3em;
-
     li {
         margin-bottom: 1em;
         font-weight: 300;
@@ -60,21 +59,21 @@ footer {
 }
 
 .fest_intro {
-h2 {
-    padding-bottom: .75em;
-    font-weight: 700;
-    font-size: 2.5em;
-    max-width: 700px; 
-}
-h3 {
-    font-size: 2em;
-    margin-bottom: 1em;
+    h2 {
+        padding-bottom: .75em;
+        font-weight: 700;
+        font-size: 2.5em;
+        max-width: 700px;
+    }
+    h3 {
+        font-size: 2em;
+        margin-bottom: 1em;
+    }
+    p {
+        max-width: 700px;
+    }
 }
 
-p{
-    max-width: 700px;
-}
-}
 .partners {
     h2, h3 {
         padding: .75em 0;
@@ -95,10 +94,19 @@ p{
     font-size: 1.2em;
 }
 
-.cp_mama p {font-size: 1em; font-weight: normal}
-.secondary_sponsors_col1,.secondary_sponsors_col2 {font-size: 1em;}
+.cp_mama p {
+    font-size: 1em;
+    font-weight: normal;
+}
 
-.animation_mama span {font-family: $head; font-size: 1.1em;}
+.secondary_sponsors_col1, .secondary_sponsors_col2 {
+    font-size: 1em;
+}
+
+.animation_mama span {
+    font-family: $head;
+    font-size: 1.1em;
+}
 
 /*=====Music Page=====*/
 .stage_wrap span {
@@ -115,12 +123,10 @@ p{
     margin-bottom: 2em;
 }
 
-
 .stage_wrap h2 {
     font-size: 2em;
     line-height: 1.25;
 }
-
 
 /*=====Food Page=====*/
 
@@ -149,7 +155,10 @@ p{
 .event_wrap h1, .sponsor_wrap h1 {
     padding-bottom: 1em;
 }
-.event_wrap p {padding-bottom: 1em;}
+
+.event_wrap p {
+    padding-bottom: 1em;
+}
 
 .gala {
     h2 {
@@ -159,6 +168,7 @@ p{
         padding-left: 3.7em;
     }
 }
+
 .event_wrap span {
     display: block;
     margin-bottom: .5em;
@@ -166,14 +176,18 @@ p{
     font-weight: 600;
 }
 
-.gala_info .headliner {font-size: 1.5em; padding-bottom: 2.5em}
-.events p{
+.gala_info .headliner {
+    font-size: 1.5em;
     padding-bottom: 2.5em;
+}
 
+.events p {
+    padding-bottom: 2.5em;
     &:last-of-type {
         padding-bottom: 0;
     }
 }
+
 /*=====Adopt Page=====*/
 
 .sponsor_wrap h3 {
@@ -183,6 +197,7 @@ p{
 .sponsor_wrap p, .sponsor_wrap h1 {
     max-width: 700px;
 }
+
 .sponsor_wrap li {
     font-size: 1.25em;
     line-height: 1.5;
