@@ -14,5 +14,5 @@ Technologies and skills used include:
 * Photoshop (wireframing, comps, and styletiles) 
 * Illustrator (icon set and logos) 
 * sketching, research, site and competitor analysis
-* Typekit.
+* Typekit
 
